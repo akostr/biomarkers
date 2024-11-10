@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+       
+      <file>resource/standard_models/standard_models_heuristics_en_EN.json</file>
+      <file>resource/standard_models/standard_models_heuristics_ru_RU.json</file>
+
+    </qresource>
+</RCC>
