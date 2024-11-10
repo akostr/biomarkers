@@ -1,0 +1,315 @@
+{
+    "PhysicalQuantityAngle": {
+        "UOMAngleDegrees": [
+            "deg"
+        ],
+        "UOMAngleRadians": [
+            "rad"
+        ]
+    },
+    "PhysicalQuantityConductivity": {
+        "UOMConductivityMilliDarcyMeter": [
+            "mD*m"
+        ]
+    },
+    "PhysicalQuantityConsistency": {
+        "UOMConsistencyPascalSecondToTheN": [
+            "Pa*sec^n",
+            "Pa*secn"
+        ],
+        "UOMConsistencyPoundForceSecondToTheNOverFootSquared": [
+            "lbf*sec^n/ft^2",
+            "lbf*secn/ft2"
+        ]
+    },
+    "PhysicalQuantityEnergyOverMassTemperature": {
+        "UOMEnergyOverMassTemperatureJouleOverKilogramCelsius": [
+            "J/(kg*°C)"
+        ]
+    },
+    "PhysicalQuantityEnergyOverTemperature": {
+        "UOMEnergyOverTemperatureJouleOverCelsius": [
+            "J/°C"
+        ]
+    },
+    "PhysicalQuantityLeakoffCoefficient": {
+        "UOMLeakoffCoefficientCentiMeterOverMinuteToTheOneHalf": [
+            "cm/min^0.5",
+            "cm/min0.5"
+        ],
+        "UOMLeakoffCoefficientCentiMeterOverSecondToTheOneHalf": [
+            "cm/sec0.5",
+            "cm/sec^0.5"
+        ],
+        "UOMLeakoffCoefficientMeterOverMinuteToTheOneHalf": [
+            "m/min^0.5",
+            "m/min0.5"
+        ],
+        "UOMLeakoffCoefficientMeterOverSecondToTheOneHalf": [
+            "m/sec0.5",
+            "m/sec^0.5"
+        ]
+    },
+    "PhysicalQuantityLength": {
+        "UOMLengthFoot": [
+            "ft"
+        ],
+        "UOMLengthInch": [
+            "in"
+        ],
+        "UOMLengthMeter": [
+            "m"
+        ],
+        "UOMLengthMillimiter": [
+            "mm"
+        ]
+    },
+    "PhysicalQuantityMass": {
+        "UOMMassKilogram": [
+            "kg"
+        ],
+        "UOMMassPoundMass": [
+            "lb"
+        ],
+        "UOMMassTonne": [
+            "t"
+        ]
+    },
+    "PhysicalQuantityMassRate": {
+        "UOMMassRateKilogramOverMinute": [
+            "kg/min"
+        ],
+        "UOMMassRateKilogramOverSecond": [
+            "kg/s"
+        ],
+        "UOMMassRatePoundMassOverMinute": [
+            "lb/min"
+        ],
+        "UOMMassRatePoundMassOverSecond": [
+            "lb/s"
+        ],
+        "UOMMassRateTonneOverMinute": [
+            "t/min"
+        ]
+    },
+    "PhysicalQuantityMeasureless": {
+        "UOMMeasurelessPercent": [
+            "%"
+        ],
+        "UOMMeasurelessUnitFraction": [
+            "u.f.",
+            "u. f."
+        ]
+    },
+    "PhysicalQuantityNone": {
+        "UOMPeriodDays": [
+            "day"
+        ],
+        "UOMPeriodMonths": [
+            "month"
+        ],
+        "UOMPeriodYears": [
+            "year"
+        ]
+    },
+    "PhysicalQuantityPermeability": {
+        "UOMPermeabilityMilliDarcy": [
+            "md"
+        ]
+    },
+    "PhysicalQuantityPressure": {
+        "UOMPressureAtmosphere": [
+            "atm"
+        ],
+        "UOMPressureBar": [
+            "bar"
+        ],
+        "UOMPressureGigaPascal": [
+            "GPa"
+        ],
+        "UOMPressureKiloPascal": [
+            "kPa"
+        ],
+        "UOMPressureMegaPascal": [
+            "MPa"
+        ],
+        "UOMPressurePSI": [
+            "psi"
+        ],
+        "UOMPressurePascal": [
+            "Pa"
+        ]
+    },
+    "PhysicalQuantityPressureOverLength": {
+        "UOMPressureOverLengthAtmosphereOverMeter": [
+            "atm/m"
+        ],
+        "UOMPressureOverLengthBarOverFoot": [
+            "bar/ft"
+        ],
+        "UOMPressureOverLengthBarOverMeter": [
+            "bar/m"
+        ],
+        "UOMPressureOverLengthGigaPascalOverMeter": [
+            "GPa/m"
+        ],
+        "UOMPressureOverLengthKiloPascalOverMeter": [
+            "kPa/m"
+        ],
+        "UOMPressureOverLengthMegaPascalOverMeter": [
+            "MPa/m"
+        ],
+        "UOMPressureOverLengthPSIOverFoot": [
+            "psi/ft"
+        ],
+        "UOMPressureOverLengthPSIOverMeter": [
+            "psi/m"
+        ],
+        "UOMPressureOverLengthPascalOverFoot": [
+            "Pa/ft"
+        ],
+        "UOMPressureOverLengthPascalOverMeter": [
+            "Pa/m"
+        ]
+    },
+    "PhysicalQuantitySpecificGravity": {
+        "UOMSpecificGravityKilogramOverMeterCubed": [
+            "kg/cub m",
+            "kg/m^3",
+            "kg/m3"
+        ],
+        "UOMSpecificGravityPoundMassOverFootCubed": [
+            "lb/ft^3",
+            "lb/ft3",
+            "lb/cub ft"
+        ]
+    },
+    "PhysicalQuantitySpecificGravityOverArea": {
+        "SpecificGravityOverAreaKilogramOverMeterSquared": [
+            "kg/m2",
+            "kg/m^2"
+        ]
+    },
+    "PhysicalQuantitySpecificGravityOverLength": {
+        "SpecificGravityOverLengthKilogramOverMeter": [
+            "kg/m"
+        ],
+        "SpecificGravityOverLengthPoundOverFoot": [
+            "lb/ft"
+        ]
+    },
+    "PhysicalQuantitySpurtLossCoefficient": {
+        "UOMSpurtLossCoefficientMeterCubedOverMeterSquared": [
+            "m3/m2",
+            "cub m/sq m",
+            "m^3/m^2"
+        ]
+    },
+    "PhysicalQuantityTemperature": {
+        "UOMTemperatureCelsius": [
+            "°C"
+        ],
+        "UOMTemperatureKelvin": [
+            "K"
+        ]
+    },
+    "PhysicalQuantityThermalConductivity": {
+        "UOMThermalConductivityWattOverMeterCelsius": [
+            "W/(m*°C)"
+        ]
+    },
+    "PhysicalQuantityTime": {
+        "UOMTimeHours": [
+            "h"
+        ],
+        "UOMTimeMilliSeconds": [
+            "msec"
+        ],
+        "UOMTimeMinutes": [
+            "min"
+        ],
+        "UOMTimeSeconds": [
+            "sec"
+        ]
+    },
+    "PhysicalQuantityToughness": {
+        "UOMToughnessAtmosphereMeterToTheOneHalf": [
+            "atm*m0.5",
+            "atm*m^0.5"
+        ],
+        "UOMToughnessKiloPascalMeterToTheOneHalf": [
+            "kPa*m0.5",
+            "kPa*m^0.5"
+        ],
+        "UOMToughnessMegaPascalMeterToTheOneHalf": [
+            "MPa*m0.5",
+            "MPa*m^0.5"
+        ],
+        "UOMToughnessPascalMeterToTheOneHalf": [
+            "Pa*m0.5",
+            "Pa*m^0.5"
+        ]
+    },
+    "PhysicalQuantityViscosity": {
+        "UOMViscosityCentiPoise": [
+            "cP"
+        ],
+        "UOMViscosityPascalSecond": [
+            "Pa*sec"
+        ],
+        "UOMViscosityPoise": [
+            "P"
+        ]
+    },
+    "PhysicalQuantityVolume": {
+        "UOMVolumeFootCubed": [
+            "ft3",
+            "cub ft",
+            "ft^3"
+        ],
+        "UOMVolumeLitre": [
+            "l"
+        ],
+        "UOMVolumeMeterCubed": [
+            "m3",
+            "m^3",
+            "cub m"
+        ]
+    },
+    "PhysicalQuantityVolumeRate": {
+        "UOMVolumeRateBarrelOverMinute": [
+            "bpm"
+        ],
+        "UOMVolumeRateFootCubedOverMinute": [
+            "cub ft/min",
+            "ft3/min",
+            "ft^3/min"
+        ],
+        "UOMVolumeRateFootCubedOverSecond": [
+            "ft3/s",
+            "ft^3/s",
+            "cub ft/s"
+        ],
+        "UOMVolumeRateLitreOverMinute": [
+            "L/min"
+        ],
+        "UOMVolumeRateLitreOverSecond": [
+            "L/s"
+        ],
+        "UOMVolumeRateMeterCubedOverDay": [
+            "cub m/day",
+            "m^3/day",
+            "m3/day"
+        ],
+        "UOMVolumeRateMeterCubedOverMinute": [
+            "m^3/min",
+            "m3/min",
+            "cub m/min"
+        ],
+        "UOMVolumeRateMeterCubedOverSecond": [
+            "m3/s",
+            "cub m/s",
+            "m^3/s"
+        ]
+    }
+}

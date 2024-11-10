@@ -1,0 +1,314 @@
+﻿{
+    "PhysicalQuantityAngle": {
+        "UOMAngleDegrees": [
+            "град"
+        ],
+        "UOMAngleRadians": [
+            "рад"
+        ]
+    },
+    "PhysicalQuantityConductivity": {
+        "UOMConductivityMilliDarcyMeter": [
+            "мД*м"
+        ]
+    },
+    "PhysicalQuantityConsistency": {
+        "UOMConsistencyPascalSecondToTheN": [
+            "Па*сек^n",
+            "Па*секn"
+        ],
+        "UOMConsistencyPoundForceSecondToTheNOverFootSquared": [
+            "фунт-сила*сек^n/фут^2",
+            "фунт-сила*секn/фут2"
+        ]
+    },
+    "PhysicalQuantityEnergyOverMassTemperature": {
+        "UOMEnergyOverMassTemperatureJouleOverKilogramCelsius": [
+            "Дж/(кг*°C)"
+        ]
+    },
+    "PhysicalQuantityEnergyOverTemperature": {
+        "UOMEnergyOverTemperatureJouleOverCelsius": [
+            "Дж/°C"
+        ]
+    },
+    "PhysicalQuantityLeakoffCoefficient": {
+        "UOMLeakoffCoefficientCentiMeterOverMinuteToTheOneHalf": [
+            "см/мин^0.5",
+            "см/мин0.5"
+        ],
+        "UOMLeakoffCoefficientCentiMeterOverSecondToTheOneHalf": [
+            "см/сек0.5",
+            "см/сек^0.5"
+        ],
+        "UOMLeakoffCoefficientMeterOverMinuteToTheOneHalf": [
+            "м/мин^0.5",
+            "м/мин0.5"
+        ],
+        "UOMLeakoffCoefficientMeterOverSecondToTheOneHalf": [
+            "м/сек0.5",
+            "м/сек^0.5"
+        ]
+    },
+    "PhysicalQuantityLength": {
+        "UOMLengthFoot": [
+            "фут"
+        ],
+        "UOMLengthInch": [
+            "дюйм"
+        ],
+        "UOMLengthMeter": [
+            "м"
+        ],
+        "UOMLengthMillimiter": [
+            "мм"
+        ]
+    },
+    "PhysicalQuantityMass": {
+        "UOMMassKilogram": [
+            "кг"
+        ],
+        "UOMMassPoundMass": [
+            "фунт"
+        ],
+        "UOMMassTonne": [
+            "т"
+        ]
+    },
+    "PhysicalQuantityMassRate": {
+        "UOMMassRateKilogramOverMinute": [
+            "кг/мин"
+        ],
+        "UOMMassRateKilogramOverSecond": [
+            "кг/с"
+        ],
+        "UOMMassRatePoundMassOverMinute": [
+            "фунт/мин"
+        ],
+        "UOMMassRatePoundMassOverSecond": [
+            "фунт/с"
+        ],
+        "UOMMassRateTonneOverMinute": [
+            "т/мин"
+        ]
+    },
+    "PhysicalQuantityMeasureless": {
+        "UOMMeasurelessPercent": [
+            "%"
+        ],
+        "UOMMeasurelessUnitFraction": [
+            "д.ед."
+        ]
+    },
+    "PhysicalQuantityNone": {
+        "UOMPeriodDays": [
+            "дн"
+        ],
+        "UOMPeriodMonths": [
+            "мес"
+        ],
+        "UOMPeriodYears": [
+            "год"
+        ]
+    },
+    "PhysicalQuantityPermeability": {
+        "UOMPermeabilityMilliDarcy": [
+            "мД"
+        ]
+    },
+    "PhysicalQuantityPressure": {
+        "UOMPressureAtmosphere": [
+            "атм"
+        ],
+        "UOMPressureBar": [
+            "бар"
+        ],
+        "UOMPressureGigaPascal": [
+            "ГПа"
+        ],
+        "UOMPressureKiloPascal": [
+            "кПа"
+        ],
+        "UOMPressureMegaPascal": [
+            "МПа"
+        ],
+        "UOMPressurePSI": [
+            "psi"
+        ],
+        "UOMPressurePascal": [
+            "Па"
+        ]
+    },
+    "PhysicalQuantityPressureOverLength": {
+        "UOMPressureOverLengthAtmosphereOverMeter": [
+            "атм/м"
+        ],
+        "UOMPressureOverLengthBarOverFoot": [
+            "бар/фут"
+        ],
+        "UOMPressureOverLengthBarOverMeter": [
+            "бар/м"
+        ],
+        "UOMPressureOverLengthGigaPascalOverMeter": [
+            "ГПа/м"
+        ],
+        "UOMPressureOverLengthKiloPascalOverMeter": [
+            "кПа/м"
+        ],
+        "UOMPressureOverLengthMegaPascalOverMeter": [
+            "МПа/м"
+        ],
+        "UOMPressureOverLengthPSIOverFoot": [
+            "psi/фут"
+        ],
+        "UOMPressureOverLengthPSIOverMeter": [
+            "psi/м"
+        ],
+        "UOMPressureOverLengthPascalOverFoot": [
+            "Па/фут"
+        ],
+        "UOMPressureOverLengthPascalOverMeter": [
+            "Па/м"
+        ]
+    },
+    "PhysicalQuantitySpecificGravity": {
+        "UOMSpecificGravityKilogramOverMeterCubed": [
+            "кг/м^3",
+            "кг/куб. м",
+            "кг/м3"
+        ],
+        "UOMSpecificGravityPoundMassOverFootCubed": [
+            "фунт/куб. фут",
+            "фунт/фут3",
+            "фунт/фут^3"
+        ]
+    },
+    "PhysicalQuantitySpecificGravityOverArea": {
+        "SpecificGravityOverAreaKilogramOverMeterSquared": [
+            "кг/м2",
+            "кг/м^2"
+        ]
+    },
+    "PhysicalQuantitySpecificGravityOverLength": {
+        "SpecificGravityOverLengthKilogramOverMeter": [
+            "кг/м"
+        ],
+        "SpecificGravityOverLengthPoundOverFoot": [
+            "фунт/фут"
+        ]
+    },
+    "PhysicalQuantitySpurtLossCoefficient": {
+        "UOMSpurtLossCoefficientMeterCubedOverMeterSquared": [
+            "м3/м2",
+            "м^3/м^2",
+            "куб. м/кв. м"
+        ]
+    },
+    "PhysicalQuantityTemperature": {
+        "UOMTemperatureCelsius": [
+            "°C"
+        ],
+        "UOMTemperatureKelvin": [
+            "К"
+        ]
+    },
+    "PhysicalQuantityThermalConductivity": {
+        "UOMThermalConductivityWattOverMeterCelsius": [
+            "Вт/(м*°C)"
+        ]
+    },
+    "PhysicalQuantityTime": {
+        "UOMTimeHours": [
+            "ч"
+        ],
+        "UOMTimeMilliSeconds": [
+            "мсек"
+        ],
+        "UOMTimeMinutes": [
+            "мин"
+        ],
+        "UOMTimeSeconds": [
+            "сек"
+        ]
+    },
+    "PhysicalQuantityToughness": {
+        "UOMToughnessAtmosphereMeterToTheOneHalf": [
+            "атм*м^0.5",
+            "атм*м0.5"
+        ],
+        "UOMToughnessKiloPascalMeterToTheOneHalf": [
+            "кПа*м^0.5",
+            "кПа*м0.5"
+        ],
+        "UOMToughnessMegaPascalMeterToTheOneHalf": [
+            "МПа*м0.5",
+            "МПа*м^0.5"
+        ],
+        "UOMToughnessPascalMeterToTheOneHalf": [
+            "Па*м0.5",
+            "Па*м^0.5"
+        ]
+    },
+    "PhysicalQuantityViscosity": {
+        "UOMViscosityCentiPoise": [
+            "сПз"
+        ],
+        "UOMViscosityPascalSecond": [
+            "Па*сек"
+        ],
+        "UOMViscosityPoise": [
+            "Пз"
+        ]
+    },
+    "PhysicalQuantityVolume": {
+        "UOMVolumeFootCubed": [
+            "фут^3",
+            "куб. фут",
+            "фут3"
+        ],
+        "UOMVolumeLitre": [
+            "л"
+        ],
+        "UOMVolumeMeterCubed": [
+            "м^3",
+            "м3",
+            "куб. м"
+        ]
+    },
+    "PhysicalQuantityVolumeRate": {
+        "UOMVolumeRateBarrelOverMinute": [
+            "bpm"
+        ],
+        "UOMVolumeRateFootCubedOverMinute": [
+            "фут^3/мин",
+            "фут3/мин",
+            "куб.фут/мин"
+        ],
+        "UOMVolumeRateFootCubedOverSecond": [
+            "фут3/с",
+            "фут^3/с",
+            "куб. фут/с"
+        ],
+        "UOMVolumeRateLitreOverMinute": [
+            "л/мин"
+        ],
+        "UOMVolumeRateLitreOverSecond": [
+            "л/с"
+        ],
+        "UOMVolumeRateMeterCubedOverDay": [
+            "м^3/сутки",
+            "куб. м/сутки",
+            "м3/сутки"
+        ],
+        "UOMVolumeRateMeterCubedOverMinute": [
+            "куб. м/мин",
+            "м^3/мин",
+            "м3/мин"
+        ],
+        "UOMVolumeRateMeterCubedOverSecond": [
+            "м3/с",
+            "куб. м/с",
+            "м^3/с"
+        ]
+    }
+}
