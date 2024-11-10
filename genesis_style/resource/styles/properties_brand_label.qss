@@ -1,0 +1,17 @@
+QLabel 
+{ 
+  font: @fontSize @fontFace;
+  color:          @brandTextColorLight;
+} 
+
+QLabel:disabled 
+{ 
+  color:          @brandTextColorModeratePale; 
+}
+
+QLabel#labelSettingsCaption,
+QLabel#labelSettingsCaption1,
+QLabel#labelSettingsCaption2
+{
+  font: 10pt @fontFace;
+}

@@ -1,0 +1,304 @@
+{
+  "/*======================= dynamic values ===================================================*/" : "",
+  
+  "hdpi"                            : "",
+
+  "https://bugreports.qt.io/browse/QTBUG-70491"              : "",
+  "qt_version_dependent_styled_menu_left_padding_workaround" : "28px",
+
+  "/*======================= static values ===================================================*/" : "",
+
+  "fontFace"                        : "\"Segoe UI\"",
+  "fontFaceDemibold"                : "\"Segoe UI Semibold\"",
+  "fontFaceBold"                    : "\"Segoe UI\"",
+  "fontFaceSemilght"                : "\"Segoe UI\"",
+
+  "fontSizeSmaller"                 : "8pt",
+  "fontSize"                        : "9pt",
+  "fontSizeLarger"                  : "10pt",
+  "fontSizeLarger2"                 : "11pt",
+  "fontSizeLarger3"                 : "12pt",
+  "fontSizeLarger4"                 : "13pt",
+  "fontSizeLarger5"                 : "14pt",
+
+  "defaultFont"                     : "8pt @fontFace",
+  "h1"                              : "630 11pt @fontFaceSemibold",
+  "h2"                              : "10pt @fontFace",
+  "h3"                              : "500 9pt @fontFace",
+
+  "Qt::AlignLeft"                   : "1",
+  "Qt::AlignRight"                  : "2",
+
+  "Qt::Horizontal"                  : "1",
+  "Qt::Vertical"                    : "2",
+
+  "QFrame::NoFrame"                 : "0",
+  "QFrame::Box"                     : "1",
+  "QFrame::Panel"                   : "2",
+  "QFrame::WinPanel"                : "3",
+  "QFrame::HLine"                   : "4",
+  "QFrame::VLine"                   : "5",
+  "QFrame::StyledPanel"             : "6",
+
+  "QAbstractSpinBox::NoButtons"     : "2",
+
+  "splitterHandleSize"              : "8",
+
+  "/*======================= high level color roles todos ===================================================*/" : "
+    unapproved:
+      brandColorSelected
+      brandColorLighterSelectedHover
+      brandColorSelected
+  ",
+
+  "whiteHalf"                       : "#7fffffff",
+
+  "brandColor"                      : "#333746",
+  "brandColorSelected"              : "#4c505d",
+  
+  "brandTextColorPale"              : "#81869E",
+  "brandTextColorVeryPale"          : "#595E70",
+  "brandTextColorModerate"          : "#9A9EAE",
+  "brandTextColorModeratePale"      : "@brandTextColorPale",
+  "brandTextColorLight"             : "#eeeeee",
+  "brandTextColorLightVivid"        : "#ffffff",
+
+  "brandLighterColor"               : "#3d4254",
+  "brandLighter2Color"              : "#494e60",
+  "brandLighterSelectedColor"       : "@brandColorLighter2",
+  "brandLighterHoverColor"          : "@brandColorLighter2",
+  "brandLighterSelectedHoverColor"  : "#646776",
+  
+  "brandMenuBackground"             : "@brandColorLighter2",
+  "brandMenuBackgroundSelected"     : "@brandColorLighter",
+  "brandMenuForeground"             : "#c9cbd5",
+  "brandMenuForegroundSelected"     : "#ffffff",
+  "brandMenuForegroundDisabled"     : "#81869e",
+  "brandMenuSeparator"              : "#595e70",
+
+  "brandNavigationToolbarButtonDisabledBackground" : "#777D94",
+
+  "/*======================= high level color roles ===================================================*/" : "",
+  
+  "windowColor"                       : "#ffffff",
+
+  "textColor"                         : "#333333",
+  "textColorPale"                     : "#949494",
+  "textColorVeryPale"                 : "#aaaaaa",
+  "textColorVivid"                    : "#000000",
+
+  "frameColor"                        : "#d7d7d7",
+  "frameColorLighter"                 : "#EAEAEA",
+
+  "itemViewSelectionBackgroundColor"            : "#DFE5FF",
+  "itemViewSelectionBackgroundColorTransparent" : "#0f002fff",
+  "itemViewSelectionForegroundColor"            : "@textColor",
+  "itemViewFocusRectColor"                      : "#617FFF",
+  "itemViewGridColor"                           : "@frameColorLighter",
+  "itemViewGridColorSelected"                   : "@frameColor",
+  "itemViewGridColorHover"                      : "#A6B7FF",
+  "itemViewGridColorFocus"                      : "@itemViewFocusRectColor",
+
+  "headerViewBorder"                  : "@frameColorLighter",
+  "headerViewBorderHover"             : "@frameColor",
+  "headerViewBorderActive"            : "@frameColor",
+  
+  "headerViewBackground"              : "white",
+  "headerViewBackgroundHover"         : "#EFF2FF",
+  "headerViewBackgroundActive"        : "#EFF2FF",
+
+  "baseColor"                         : "#ffffff",
+  "baseColorDisabled"                 : "#f6f6f6",
+  "baseColorAlternate"                : "#f9f9f9",
+  "baseColorAlternateDisabled"        : "#f0f0f0",
+
+  "baseColorGray"                     : "#F6F6F6",
+  "baseColorGrayHalf"                 : "#7fF6F6F6",
+  "baseColorGrayHalfOnWhite"          : "#fbfbfb",
+  "baseColorGrayDarker"               : "#e5e5e5",
+  "baseColorGrayDarker2"              : "#e1e1e1",
+  "baseColorGrayDarker2Half"          : "#f7e1e1e1",
+  "baseColorGrayDarker3"              : "#d4d4d4",
+  "baseColorGrayLighter"              : "#F6F6F6",
+  
+  "uiBackgroundColor"                 : "@windowColor",
+  
+  "uiElementFrame"                    : "#C8C8C8",
+  "uiElementFrameHover"               : "#B6B6B6",
+  "uiElementFrameActive"              : "#617FFF",
+  "uiElementFrameDisabled"            : "#C8C8C8",
+
+  "uiElementInputBackground"          : "#ffffff",
+  "uiElementInputBackgroundHover"     : "#ffffff",
+  "uiElementInputBackgroundActive"    : "#ffffff",
+  "uiElementInputBackgroundDisabled"  : "#F6F6F6",
+
+  "uiElementInputText"                : "@textColor",
+  "uiElementInputTextHover"           : "@textColor",
+  "uiElementInputTextActive"          : "@textColor",
+  "uiElementInputTextDisabled"        : "@textColorPale",
+
+  "vividColor"                        : "#617FFF",
+  "vividColorGrayscale"               : "#b0b0b0",
+
+  "vividColorPale00"                  : "#ffffff",
+  "vividColorPale01"                  : "rgba(97, 127, 255, 0.1)",
+  "vividColorPale02"                  : "rgba(97, 127, 255, 0.2)",
+
+  "vividColorPale00OnWhite"           : "#ffffff",
+  "vividColorPale01OnWhite"           : "#f1f5f9",
+  "vividColorPale02OnWhite"           : "#e2e6fb",
+
+  "vividColorDarker0"                 : "#5171F8",
+  "vividColorDarker0Half"             : "#7f5171F8",
+  "vividColorDarker"                  : "#4C6DF8",
+  "vividColorDarker2"                 : "#3D5CE3",
+  "vividColorDarker3"                 : "#1E40D0",
+  "vividColorDarker4"                 : "#1033C8",
+  "vividColorDisabled"                : "#C8C8C8",
+  "vividColorInactive"                : "#C8C8C8",
+  "vividColorDisabledAlternative"     : "#EAEAEA",
+
+  "vividColorText"                    : "#ffffff",
+  "vividColorTextDisabled"            : "#ffffff",
+  "vividColorTextInactive"            : "#ffffff",
+  "vividColorTextHalf"                : "#7fffffff",
+
+  "vividElementColor"                 : "@vividColor",
+  "vividElementColorHover"            : "@vividColorDarker",
+  "vividElementColorClick"            : "@vividColorDarker2",
+  "vividElementColorFocus"            : "@vividColorDarker4",
+  "vividElementColorDisabled"         : "@vividColorDisabled",
+
+  "vividBorderElementBdColor"         : "@vividColor",
+  "vividBorderElementBdColorHover"    : "@vividColor",
+  "vividBorderElementBdColorClick"    : "@vividColorDarker2",
+  "vividBorderElementBdColorFocus"    : "@vividColor",
+  "vividBorderElementBdColorDisabled" : "@vividColorDisabledAlternative",
+  
+  "vividBorderElementBgColor"         : "@vividColorPale00OnWhite",
+  "vividBorderElementBgColorHover"    : "@vividColorPale01OnWhite",
+  "vividBorderElementBgColorClick"    : "@vividColorPale02OnWhite",
+  "vividBorderElementBgColorFocus"    : "@vividColorPale02OnWhite",
+  "vividBorderElementBgColorDisabled" : "@vividColorDisabledAlternative",
+
+  "vividBorderElementFgColor"         : "@vividColorDarker",
+  "vividBorderElementFgColorHover"    : "@vividColorDarker2",
+  "vividBorderElementFgColorClick"    : "@vividColorDarker4",
+  "vividBorderElementFgColorFocus"    : "@vividColorDarker",
+  "vividBorderElementFgColorDisabled" : "@textColorPale",
+
+  "lightGrayColor"                    : "#F6F6F6",
+  "lightGrayColor2"                   : "#EAEAEA",
+  "lightGrayColor3"                   : "#D7D7D7",
+  "lightGrayColor4"                   : "#C8C8C8",
+  "lightGrayColor5"                   : "#B6B6B6",
+  "lightGrayColor6"                   : "#A8A8A8",
+  "lightGrayColor7"                   : "#949494",
+
+  "selectionColor"                    : "@vividColor",
+
+  "criticalColor"                     : "#ED2525",
+  "criticalColorHover"                : "#E61515",
+  "criticalColorPressed"              : "#D10303",
+  "criticalColorFocus"                : "#D10303",
+  "criticalColorDisabled"             : "#C8C8C8",
+
+  "warningColor"                      : "#FFEAB3",
+
+  "/*======================= qt palete color roles ===================================================*/" : "",
+
+  "palette::WindowText::Active"         : "@textColor",
+  "palette::WindowText::Disabled"       : "@textColorPale",
+  "palette::WindowText::Inactive"       : "@textColor",
+
+  "palette::Button::Active"             : "#f0f0f0",
+  "palette::Button::Disabled"           : "#f0f0f0",
+  "palette::Button::Inactive"           : "#f0f0f0",
+
+  "palette::Light::Active"              : "#ffffff",
+  "palette::Light::Disabled"            : "#ffffff",
+  "palette::Light::Inactive"            : "#ffffff",
+
+  "palette::Midlight::Active"           : "#e3e3e3",
+  "palette::Midlight::Disabled"         : "#e3e3e3",
+  "palette::Midlight::Inactive"         : "#f7f7f7",
+
+  "palette::Dark::Active"               : "#a0a0a0",
+  "palette::Dark::Disabled"             : "#a0a0a0",
+  "palette::Dark::Inactive"             : "#a0a0a0",
+
+  "palette::Mid::Active"                : "#a0a0a0",
+  "palette::Mid::Disabled"              : "#a0a0a0",
+  "palette::Mid::Inactive"              : "#a0a0a0",
+
+  "palette::Text::Active"               : "@textColor",
+  "palette::Text::Disabled"             : "@textColorPale",
+  "palette::Text::Inactive"             : "@textColor",
+
+  "palette::BrightText::Active"         : "@vividColorText",
+  "palette::BrightText::Disabled"       : "@vividColorTextDisabled",
+  "palette::BrightText::Inactive"       : "@vividColorText",
+    
+  "palette::ButtonText::Active"         : "@textColor",
+  "palette::ButtonText::Disabled"       : "@textColorPale",
+  "palette::ButtonText::Inactive"       : "@textColor",
+
+  "palette::Base::Active"               : "@baseColor",
+  "palette::Base::Disabled"             : "@baseColorDisabled",
+  "palette::Base::Inactive"             : "@baseColor",
+  
+  "palette::Window::Active"             : "@windowColor",
+  "palette::Window::Disabled"           : "@windowColor",
+  "palette::Window::Inactive"           : "@windowColor",
+
+  "palette::Shadow::Active"             : "#696969",
+  "palette::Shadow::Disabled"           : "#696969",
+  "palette::Shadow::Inactive"           : "##000000",
+
+  "palette::Highlight::Active"          : "@vividColor",
+  "palette::Highlight::Disabled"        : "@vividColorDisabled",
+  "palette::Highlight::Inactive"        : "@vividColorInactive",
+
+  "palette::HighlightedText::Active"    : "@vividColorText",
+  "palette::HighlightedText::Disabled"  : "@vividColorTextDisabled",
+  "palette::HighlightedText::Inactive"  : "@vividColorTextInactive",
+
+  "palette::Link::Active"               : "@vividColor",
+  "palette::Link::Disabled"             : "@vividColor",
+  "palette::Link::Inactive"             : "@vividColor",
+
+  "palette::LinkVisited::Active"        : "@vividColorDarker",
+  "palette::LinkVisited::Disabled"      : "@vividColorDarker",
+  "palette::LinkVisited::Inactive"      : "@vividColorDarker",
+  
+  "palette::AlternateBase::Active"      : "@baseColorAlternate",
+  "palette::AlternateBase::Disabled"    : "@baseColorAlternateDisabled",
+  "palette::AlternateBase::Inactive"    : "@baseColorAlternate",
+
+  "palette::NoRole::Active"             : "@vividColor",
+  "palette::NoRole::Disabled"           : "@vividColor",
+  "palette::NoRole::Inactive"           : "@vividColor",
+
+  "palette::ToolTipBase::Active"        : "#ffffdc",
+  "palette::ToolTipBase::Disabled"      : "#ffffdc",
+  "palette::ToolTipBase::Inactive"      : "#ffffdc",
+
+  "palette::ToolTipText::Active"        : "#000000",
+  "palette::ToolTipText::Disabled"      : "#000000",
+  "palette::ToolTipText::Inactive"      : "#000000",
+
+  "palette::PlaceholderText::Active"    : "#80000000",
+  "palette::PlaceholderText::Disabled"  : "#80000000",
+  "palette::PlaceholderText::Inactive"  : "#80000000",
+  
+  "palette::Foreground::Active"         : "@palette::WindowText::Active",
+  "palette::Foreground::Disabled"       : "@palette::WindowText::Disabled",
+  "palette::Foreground::Inactive"       : "@palette::WindowText::Inactive",
+
+  "palette::Background::Active"         : "@palette::Window::Active",
+  "palette::Background::Disabled"       : "@palette::Window::Disabled",
+  "palette::Background::Inactive"       : "@palette::Window::Inactive",
+
+  "/*======================= EOF ===================================================*/" : ""
+}

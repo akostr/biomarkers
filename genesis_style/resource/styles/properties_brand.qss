@@ -1,0 +1,13 @@
+@properties_brand_widget.qss
+
+@properties_brand_label.qss
+
+@properties_brand_menu.qss
+
+@properties_brand_pushbutton.qss
+
+@properties_brand_combo.qss
+
+@properties_brand_scroll.qss
+
+@properties_brand_spin.qss

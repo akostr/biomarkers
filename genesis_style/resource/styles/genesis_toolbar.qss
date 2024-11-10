@@ -1,0 +1,16 @@
+@genesis_ui.qss
+
+QPushButton
+{
+  outline:            transparent;
+
+  font:               @RegularTextFont;
+
+  padding:            @toolbarElementPadding;
+
+  border:             none;
+
+  color:              @textColorButton;
+
+  background-color:   transparent;
+}

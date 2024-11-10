@@ -1,0 +1,6 @@
+QWidget[style="white_base"]
+{
+  background: white;
+  padding: 0px;
+  border-radius: 8px;
+}

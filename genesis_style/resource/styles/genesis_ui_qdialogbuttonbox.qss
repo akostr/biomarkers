@@ -1,0 +1,79 @@
+QDialogButtonBox QPushButton
+{
+outline:            transparent;
+
+font:               @RegularTextFont;
+padding:            @pushButtonPaddingVScalablepx @pushButtonPaddingHScalablepx @pushButtonPaddingVScalablepx @pushButtonPaddingHScalablepx;
+
+color:              @dialogBoxButtonSecondaryFg;
+
+background-color:   @dialogBoxButtonSecondaryBg;
+
+border-color:       @uiInputElementColorFrameOpaque;
+border-width:       1px;
+border-radius:      @borderRadius;
+border-style:       solid;
+}
+
+QDialogButtonBox QPushButton:flat
+{
+background-color:   @dialogBoxButtonSecondaryBg;
+border-color:       @dialogBoxButtonSecondaryBg;
+color:              @dialogBoxButtonSecondaryFg;
+}
+
+QDialogButtonBox QPushButton:disabled
+{
+color:              @textColorVeryPale;
+
+background-color:   @uiInputElementColorBgDisabled;
+
+border-color:       @uiInputElementColorBgDisabled;
+
+}
+
+QDialogButtonBox QPushButton:default:disabled
+{
+color:              @textColorVeryPale;
+
+background-color:   @uiInputElementColorBgDisabled;
+
+border-color:       @uiInputElementColorBgDisabled;
+}
+
+QDialogButtonBox QPushButton:focus
+{
+border-color:       @uiInputElementColorFrameButtonFocus;
+}
+
+QDialogButtonBox QPushButton:default
+{
+background-color:   @dialogBoxButtonPrimaryBg;
+
+border-color:       @dialogBoxButtonPrimaryBg;
+
+color:              @dialogBoxButtonPrimaryFg;
+}
+
+QDialogButtonBox QPushButton[red="true"]
+{
+background-color:   @dialogBoxButtonRedBg;
+border-color:       @dialogBoxButtonRedBg;
+color:              @dialogBoxButtonPrimaryFg;
+}
+
+QDialogButtonBox QPushButton[blue="true"]
+{
+background-color:   @dialogBoxButtonPrimaryBg;
+border-color:       @dialogBoxButtonPrimaryBg;
+color:              @dialogBoxButtonPrimaryFg;
+}
+
+QDialogButtonBox QPushButton[login="true"]
+{
+border-top-left-radius:@borderRadius;
+border-top-right-radius:0;
+border-bottom-right-radius:0;
+border-bottom-left-radius:@borderRadius;
+margin-right:       0px;
+}

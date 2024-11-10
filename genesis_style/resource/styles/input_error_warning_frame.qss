@@ -1,0 +1,14 @@
+/* warning frame */
+.QFrame,
+.WarningsFrame
+{
+  border:         1px solid @warningColor;
+  border-radius:  3px;
+  background:     @warningColor;
+  padding:        0px;
+}
+
+QLabel
+{
+  color:          @fontColorPrimary;
+}

@@ -1,0 +1,10 @@
+/*
+  @!page_caption_brand.qss
+*/
+
+QLabel
+{
+  color:    @fontColorPrimary;
+  font:     @h1;
+  padding:  6px 6px 6px 4px;
+}

@@ -1,0 +1,39 @@
+@genesis_font.qss
+
+/* QLabel */
+QLabel
+{
+  font:   @RegularTextFont;
+  color:  @fontColorSecondary;
+}
+
+QLabel:disbaled
+{
+  color:  @fontColorSecondary;
+}
+
+QLabel[white="true"]
+{
+  border: 1px solid transparent;
+  background: white;
+  color: @dialogBoxButtonSecondaryFg;
+}
+
+QLabel[H1="true"]
+{
+  font: @h1;
+  color: @fontColorPrimary;
+}
+
+QLabel[H2="true"]
+{
+  font: @h2;
+  color: @fontColorPrimary;
+}
+
+
+QLabel[regular_light="true"]
+{
+  font: @RegularTextFont;
+  color: @fontColorSecondary;
+}

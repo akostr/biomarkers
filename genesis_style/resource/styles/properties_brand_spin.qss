@@ -1,0 +1,75 @@
+/* ================================ */
+QAbstractSpinBox
+{
+    background:   @brandColor;
+    color:        @brandTextColorLight;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: @brandTextColorModeratePale;
+}
+
+QAbstractSpinBox:disabled
+{
+    color:        @brandTextColorModeratePale;
+    border-color: @brandTextColorModeratePale;
+}
+
+QAbstractSpinBox:hover
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: @brandTextColorModerate;
+}
+
+QAbstractSpinBox::up-button, 
+QAbstractSpinBox::down-button 
+{
+  border: 4px;
+  border-radius: 0;
+  background: none;
+  width: 6px;
+  height: 6px;
+}
+
+QAbstractSpinBox::up-button 
+{
+  subcontrol-origin: content;
+  subcontrol-position: top right;
+  top: 1px;
+  border: 2px solid transparent;
+}
+
+QAbstractSpinBox::down-button 
+{
+  subcontrol-origin: content;
+  subcontrol-position: bottom right;
+  top: -1px;
+  border: 2px solid transparent;
+}
+
+QAbstractSpinBox::up-arrow 
+{
+  image: url(:/resource/styles/standard/spin/spin_up50.png);
+}
+
+QAbstractSpinBox::up-arrow:disabled,
+QAbstractSpinBox::up-arrow:off 
+{
+  image: url(:/resource/styles/standard/spin/spin_up30.png);
+}
+QAbstractSpinBox::up-arrow 
+{
+  image: url(:/resource/styles/standard/spin/spin_up50.png);
+}
+
+QAbstractSpinBox::down-arrow 
+{
+  image: url(:/resource/styles/standard/spin/spin_down50.png);
+}
+
+QAbstractSpinBox::down-arrow:disabled,
+QAbstractSpinBox::down-arrow:off 
+{
+  image: url(:/resource/styles/standard/spin/spin_down30.png);
+}

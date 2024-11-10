@@ -1,0 +1,30 @@
+/* QLineEdit */
+QLineEdit
+{
+  font:             @RegularTextFont;
+
+  color:            @uiInputElementColorText;
+  background-color: @uiInputElementColorBg;
+
+  border-color:     @uiInputElementColorFrameOpaque;
+  border-width:     1px;
+  border-radius:    @borderRadius;
+  border-style:     solid;
+
+  padding-left:       @inputPadding;
+  padding-right:      @inputPadding;
+  padding-top:        @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-bottom:     @dialogButtonBoxButtonPaddingVScalablepx;
+}
+
+QLineEdit:disabled
+{
+  color:            @uiInputElementColorTextDisabled;
+  border-color:     @uiInputElementColorFrameDisabledOpaque;
+  background-color: @uiInputElementColorBgDisabledOpaque;
+}
+
+QLineEdit:focus
+{
+  border-color:     @uiInputElementColorFrameActive;
+}

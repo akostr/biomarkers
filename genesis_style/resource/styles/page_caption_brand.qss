@@ -1,0 +1,7 @@
+QLabel 
+{
+  background-color:   @brandColor;
+  color:              @brandTextColorModerate;
+  padding:            6px 6px 6px 6px;
+  font:               11pt @fontFace;
+}

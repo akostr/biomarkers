@@ -1,0 +1,5 @@
+{
+  color: @brandTextColorPale;
+  padding: 4px 18px 4px 4px;
+  font: 11pt @fontFace;
+}

@@ -1,0 +1,67 @@
+/* QFrame */
+.QFrame
+{
+  background-color:   transparent;
+}
+
+.QFrame[frameShape="@QFrame::HLine"]
+{
+  height:             1px;
+  border-top:         1px solid @frameColor;
+}
+
+.QFrame#hline
+{
+  height:             1px;
+  border-top:         1px solid @frameColor;
+}
+
+.QFrame[frameShape="@QFrame::VLine"]
+{
+  width:              1px;
+  border:             none;
+  background-color:   @frameColor;
+}
+
+.QFrame#vline
+{
+  width:              1px;
+  border:             none;
+  background-color:   @frameColor;
+}
+
+.QFrame[frameShape="@QFrame::Box"]
+{
+  border:             1px solid @frameColor;
+  background-color:   transparent;
+}
+
+.QFrame[frameShape="@QFrame::WinPanel"]
+{
+  background-color:   "#ffffff";
+
+  border-color:       "#ffffff";
+  border-width:       0px;
+  border-radius:      @borderRadius;
+  border-style:       solid;
+}
+
+.QFrame[frameShape="@QFrame::Panel"]
+{
+  background-color:   "#ffffff";
+
+  border-color:       "#ffffff";
+  border-width:       0px;
+  border-radius:      @borderRadius;
+  border-style:       solid;
+}
+
+.QFrame#rounded
+{
+  background-color:   "#ffffff";
+
+  border-color:       "#ffffff";
+  border-width:       0px;
+  border-radius:      @borderRadius;
+  border-style:       solid;  
+}

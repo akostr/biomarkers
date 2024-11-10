@@ -1,0 +1,28 @@
+QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::unchecked {
+    image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_click.png);
+}
+
+QRadioButton::indicator:unchecked:hover {
+    image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_click.png);
+}
+
+QRadioButton::indicator:unchecked:pressed {
+    image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_click.png);
+}
+
+QRadioButton::indicator::checked {
+    image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_click.png);
+}
+
+QRadioButton::indicator:checked:hover {
+    image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_click.png);
+}
+
+QRadioButton::indicator:checked:pressed {
+    image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_click.png);
+}

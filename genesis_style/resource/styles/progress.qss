@@ -1,0 +1,10 @@
+QWidget#progress 
+{ 
+  background-color: @brandColor;
+  text-align:       left; 
+  color:            @brandTextColorModerate;
+  padding:          4px 4px 4px 2px; 
+  font:             11pt @fontFace;
+}
+
+@ui_qpushbutton.qss

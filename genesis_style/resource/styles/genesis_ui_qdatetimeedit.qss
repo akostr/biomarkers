@@ -1,0 +1,40 @@
+/* QDateTimeEdit */
+QDateTimeEdit:drop-down
+{
+  background:       none;
+  border:           none;
+
+  width:            20px;
+  height:           16px;
+
+  subcontrol-origin:   content;
+  subcontrol-position: right;
+
+  image:            url(:/resource/styles/genesis/qcombobox/indicator_dn.png);
+}
+
+QWidget#qt_calendar_prevmonth
+{
+  qproperty-icon:url(":/resource/controls//collpse_lt.png");
+}
+
+QWidget#qt_calendar_nextmonth
+{
+  qproperty-icon:url(":/resource/controls//collpse_rt.png");
+}
+
+
+/* QDateEdit */
+QDateEdit:drop-down
+{
+  background:       none;
+  border:           none;
+
+  width:            20px;
+  height:           16px;
+
+  subcontrol-origin:   content;
+  subcontrol-position: right;
+
+  image:            url(:/resource/styles/genesis/qdateedit/icon_calendar.png);
+}

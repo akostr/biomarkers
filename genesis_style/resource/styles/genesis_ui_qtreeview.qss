@@ -1,0 +1,239 @@
+/* QTreeView*/
+QTreeView
+{
+  outline:                      transparent;
+
+  gridline-color:               @frameColorViewGridOpaque;
+  
+  font:                         @SecondaryTextFont;
+
+  color:                        @fontColorPrimary;
+  background-color:             white;
+}
+
+QTreeView[frameShape="@QFrame::Box"]
+{
+  border:                       1px solid @frameColorViewGridOpaque;
+}
+
+QTreeView[frameShape="@QFrame::Panel"]
+{
+  border:                       1px solid @frameColorViewGridOpaque;
+}
+
+QTreeView[frameShape="@QFrame::StyledPanel"]
+{
+  border:                       1px solid @frameColorViewGridOpaque;
+}
+
+QTreeView::item
+{
+  outline:                      transparent;
+
+  color:                        @fontColorPrimary;
+  background-color:             white;
+
+  border:                       1px solid;
+
+  border-bottom-color:          rgb(218, 226, 232);
+  border-left-color:            transparent;
+  border-right-color:           transparent;
+  border-top-color:             transparent;
+
+  padding:                      @tableViewItemPadding;
+}
+
+QTreeView::item:selected
+{
+  color:                        @fontColorPrimary;
+  background-color:             @tableviewSelectionColorOpaque;
+
+  border:                       none;
+  /*
+  border-bottom-color:          rgb(218, 226, 232);
+  border-left-color:            transparent;
+  border-right-color:           transparent;
+  border-top-color:             transparent;
+  */
+}
+
+QTreeView[dataDrivenColors="true"]::item
+{
+outline:                      transparent;
+
+color:                        none;
+background-color:             transparent;
+
+border:                       1px solid;
+
+border-bottom-color:          rgb(218, 226, 232);
+border-left-color:            transparent;
+border-right-color:           transparent;
+border-top-color:             transparent;
+
+padding:                      @tableViewItemPadding;
+}
+
+QTreeView[dataDrivenColors="true"]::item:selected
+{
+color:                        @fontColorPrimary;
+background-color:             rgba(0,78,118,26);
+
+border:                       none;
+/*
+border-bottom-color:          rgb(218, 226, 232);
+border-left-color:            transparent;
+border-right-color:           transparent;
+border-top-color:             transparent;
+*/
+}
+
+QTreeView::branch {
+  background:                   white;
+  border: 1px solid             rgb(218, 226, 232);;
+  border-left-color:            transparent;
+  border-right-color:           transparent;
+  border-top-color:             transparent;
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+  border-image: none;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+  border-image: none;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+  border-image: none;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+  border-image: none;
+  image: url(:/resource/controls/collpse_rt.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+  border-image: none;
+  image: url(:/resource/controls/collpse_dn.png);
+}
+
+QTreeView QHeaderView::section {
+  border:                       1px solid @frameColorViewGridOpaque;
+
+  border-left-color:            transparent;
+  /*border-right-color:           transparent;*/
+  border-top-color:             transparent;
+}
+
+/* Sort indicator */
+
+TableViewHeaderView::down-arrow {
+  width:  1px;
+  height: 1px;
+  subcontrol-position: right center;
+  subcontrol-origin: content;
+  image:  url(:/resource/styles/genesis/null/null.png);
+}
+
+TableViewHeaderView::up-arrow {
+  width:  1px;
+  height: 1px;
+  subcontrol-position: right center;
+  subcontrol-origin: content;
+  image: url(:/resource/styles/genesis/null/null.png);
+}
+
+
+/*
+есть младшие, не примыкает к элементу
+QTreeView::branch:has-siblings:!adjoins-item {
+  background: cyan;
+}
+#eсть младшие, примыкает к элементу
+QTreeView::branch:has-siblings:adjoins-item {
+  background: red;
+}
+#нет дочерних, нет младших, примыкает к элементу
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+  background: blue;
+}
+
+#закрыт, есть дочерние, есть младшие
+QTreeView::branch:closed:has-children:has-siblings {
+  background: pink;
+}
+
+#закрыт, есть дочерние, нет младших
+QTreeView::branch:has-children:!has-siblings:closed {
+  background: gray;
+}
+
+#открыт, есть дочерние, есть младшие
+QTreeView::branch:open:has-children:has-siblings {
+  background: magenta;
+}
+
+#открыт, есть дочерние, нет младших
+QTreeView::branch:open:has-children:!has-siblings {
+  background: green;
+}
+*/
+
+QTreeView::indicator {
+  width:  16px;
+  height: 16px;
+}
+
+/* off */
+QTreeView::indicator:unchecked {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_normal.png);
+}
+
+QTreeView::indicator:unchecked:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_hover.png);
+}
+
+QTreeView::indicator:unchecked:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_click.png);
+}
+
+QTreeView::indicator:unchecked:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_disabled.png);
+}
+
+/* on */
+QTreeView::indicator:checked {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_normal.png);
+}
+
+QTreeView::indicator:checked:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_hover.png);
+}
+
+QTreeView::indicator:checked:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_click.png);
+}
+
+QTreeView::indicator:checked:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_disabled.png);
+}
+
+/* part */
+QTreeView::indicator:indeterminate {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_normal.png);
+}
+
+QTreeView::indicator:indeterminate:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_hover.png);
+}
+
+QTreeView::indicator:indeterminate:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_click.png);
+}
+
+QTreeView::indicator:indeterminate:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_disabled.png);
+}

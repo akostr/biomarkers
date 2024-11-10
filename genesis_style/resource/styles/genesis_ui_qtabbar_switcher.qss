@@ -1,0 +1,35 @@
+QTabBar
+{
+  border:           1px solid @uiInputElementColorBgDisabledOpaque;
+  border-radius:    @borderRadius;
+  background:       transparent;
+  border-top:       1px solid @uiInputElementColorBgDisabledOpaque;
+  border-right:     1px solid @uiInputElementColorBgDisabledOpaque;
+  border-bottom:    1px solid @uiInputElementColorBgDisabledOpaque;
+  border-left:      1px solid @uiInputElementColorBgDisabledOpaque;
+}
+
+QTabBar::tab
+{
+  border:           none;
+  background:       transparent;
+  color:            @textColorButton;
+}
+
+QTabBar::tab:selected
+{
+  background:       transparent;
+  color:            @brandColor;
+  border-radius:    @borderRadius;
+  border-top:       1px solid @brandColor;
+  border-right:     1px solid @brandColor;
+  border-bottom:    1px solid @brandColor;
+  border-left:      1px solid @brandColor;
+}
+
+QTabBar:disabled
+{
+  color:            @uiInputElementColorTextDisabled;
+  border-color:     @uiInputElementColorFrameDisabledOpaque;
+  background-color: @uiInputElementColorBgDisabledOpaque;
+}

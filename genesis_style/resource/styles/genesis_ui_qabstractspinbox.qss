@@ -1,0 +1,86 @@
+/* QAbstractSpinBox */
+QAbstractSpinBox
+{
+  font:             @RegularTextFont;
+
+  color:            @uiInputElementColorText;
+  background-color: @uiInputElementColorBg;
+
+  border-color:     @uiInputElementColorFrameOpaque;
+  border-width:     1px;
+  border-radius:    @borderRadius;
+  border-style:     solid;
+
+  padding-left:       @inputPadding;
+  padding-right:      @inputPadding;
+  padding-top:        @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-bottom:     @dialogButtonBoxButtonPaddingVScalablepx;
+}
+
+QAbstractSpinBox:disabled
+{
+  color:            @uiInputElementColorTextDisabled;
+
+  border-color:     @uiInputElementColorFrameDisabledOpaque;
+  background-color: @uiInputElementColorBgDisabledOpaque;
+}
+
+QAbstractSpinBox:focus
+{
+  border-color:     @uiInputElementColorFrameActive;
+}
+
+QAbstractSpinBox::up-button
+{
+  border: 1px solid transparent;
+}
+
+QAbstractSpinBox::down-button 
+{
+  border: 1px solid transparent;
+}
+
+QAbstractSpinBox::up-arrow 
+{
+  image: url(:/resource/styles/genesis/qabstractspinbox/qspinbox_up.png);
+
+  width:  6px;
+  height: 3px;
+}
+
+QAbstractSpinBox::up-arrow:disabled,
+QAbstractSpinBox::up-arrow:off 
+{
+  image: url(:/resource/styles/genesis/qabstractspinbox/qspinbox_up_disabled.png);
+}
+
+QAbstractSpinBox::down-arrow 
+{
+  image: url(:/resource/styles/genesis/qabstractspinbox/qspinbox_down.png);
+
+  width:  6px;
+  height: 3px;
+}
+
+QAbstractSpinBox::down-arrow:disabled,
+QAbstractSpinBox::down-arrow:off 
+{
+  image: url(:/resource/styles/genesis/qabstractspinbox/qspinbox_down_disabled.png);
+}
+
+QAbstractSpinBox[tiny="true"]
+{
+  padding: 0px 0px 0px 0px;
+}
+
+QAbstractSpinBox[tiny="true"]::up-button
+{
+  subcontrol-origin: border;
+  subcontrol-position: top right;
+}
+
+QAbstractSpinBox[tiny="true"]::down-button
+{
+  subcontrol-origin: border;
+  subcontrol-position: bottom right;
+}

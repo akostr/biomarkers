@@ -1,0 +1,23 @@
+/* Main toolbar / QPushButton */
+QPushButton
+{
+  background-color:   @brandColorLighter;
+  qproperty-iconSize: 45px;
+  border:             0px;
+  border-radius:      0px;
+}
+
+QPushButton:hover
+{
+  background-color: @brandColorLighterSelected;
+}
+
+QPushButton::menu-indicator
+{
+  image: none;
+  width: 0px;
+}
+
+QPushButton:disabled
+{
+}

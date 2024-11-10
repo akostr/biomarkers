@@ -1,0 +1,6 @@
+QLabel 
+{
+  color:    @textColorVeryPale;
+  padding:  0px 0px 0px 0px;
+  font:     11pt @fontFace;
+}

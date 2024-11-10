@@ -1,0 +1,5 @@
+QLabel
+{
+  font:  @h3;
+  color: @fontColorPrimary;
+}

@@ -1,0 +1,90 @@
+/* QComboBox */
+QComboBox
+{
+  font:             @RegularTextFont;
+
+  color:            @uiInputElementColorText;
+  background-color: @uiInputElementColorBg;
+
+  border-color:     @uiInputElementColorFrameOpaque;
+  border-width:     1px;
+  border-radius:    @borderRadius;
+  border-style:     solid;
+
+  padding-left:       @inputPadding;
+  padding-right:      @comboBoxButtonPaddingHScalablepx;
+  padding-top:        @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-bottom:     @dialogButtonBoxButtonPaddingVScalablepx;
+}
+
+QComboBox:disabled
+{
+  color:            @uiInputElementColorTextDisabled;
+
+  border-color:     @uiInputElementColorFrameDisabledOpaque;
+  background-color: @uiInputElementColorBgDisabledOpaque;
+}
+
+QComboBox:focus
+{
+  border-color:     @uiInputElementColorFrameActive;
+}
+
+QComboBox::drop-down
+{
+  background:       none;
+  border:           none;
+
+  width:            30px;
+  height:           30px;
+
+  subcontrol-position: center right;
+}
+
+QComboBox:down-arrow
+{
+  image:            url(:/resource/styles/genesis/qcombobox/indicator_dn.png);
+  left: 0px;
+}
+
+/* QComboBox items */
+QComboBox QWidget
+{
+  color:            black;
+  background-color: white;
+}
+
+QComboBox QAbstractItemView
+{
+  border-color:     @uiInputElementColorFrameOpaque;
+  border-width:     1px;
+  border-style:     solid;  
+}
+
+QComboBox QAbstractItemView::item 
+{
+  color:            black;
+  background-color: white;
+  border:           @inputPadding solid white;
+}
+
+QComboBox QAbstractItemView::item:selected 
+{
+  color:            white;
+  background-color: @brandColorDarker;
+  border:           @inputPadding solid @brandColorDarker;
+}
+
+QComboBox QListView::item 
+{
+  color:            black;
+  background-color: white;
+  border:           @inputPadding solid white;
+}
+
+QComboBox QListView::item:selected
+{
+  color:            white;
+  background-color: @brandColorDarker;
+  border:           @inputPadding solid @brandColorDarker;
+}

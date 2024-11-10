@@ -1,0 +1,28 @@
+QSplitter::handle:horizontal {
+    width: 6px;
+    border: none;
+    border-radius: 3px;
+    image: url(://resource/styles/genesis/qsplitter/qsplitter_horizontal2.png);
+}
+
+QSplitter::handle:vertical {
+    height: 6px;
+    border: none;
+    border-radius: 3px;
+    image: url(://resource/styles/genesis/qsplitter/qsplitter_vertical2.png);
+}
+QSplitter
+{
+  background: @windowColor;
+}
+
+QSplitter::handle:hover {
+  background-color: rgb(179, 188, 194);
+}
+
+QSplitter::handle:pressed {
+  background-color: rgb(149, 157, 162);
+}
+
+
+

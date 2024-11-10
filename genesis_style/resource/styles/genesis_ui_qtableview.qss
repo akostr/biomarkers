@@ -1,0 +1,72 @@
+/* QTableView */
+QTableView
+{
+  outline:                      transparent;
+
+  gridline-color:               @frameColorViewGridOpaque;
+  
+  font:                         @SecondaryTextFont;
+
+  color:                        @fontColorPrimary;
+  background-color:             white;
+}
+
+QTableView[frameShape="@QFrame::Box"]
+{
+  border:                       1px solid @frameColorViewGridOpaque;
+}
+
+QTableView[frameShape="@QFrame::Panel"]
+{
+  border:                       1px solid @frameColorViewGridOpaque;
+}
+
+QTableView[frameShape="@QFrame::StyledPanel"]
+{
+  border:                       1px solid @frameColorViewGridOpaque;
+}
+
+QTableView::item
+{
+  outline:                      transparent;
+
+  color:                        @fontColorPrimary;
+  background-color:             transparent;
+
+  border:                       1px solid @frameColorViewGridOpaque;
+
+  border-left-color:            transparent;
+  border-right-color:           transparent;
+  border-top-color:             transparent;
+
+  padding:                      @tableViewItemPadding;
+}
+
+QTableView::item:selected
+{
+  color:                        @fontColorPrimary;
+  background-color:             @tableviewSelectionColorOpaque;
+}
+
+QTableView[dataDrivenColors="true"]::item
+{
+outline:                      transparent;
+
+color:                        none;
+/*color:                        @fontColorPrimary;*/
+background-color:             transparent;
+
+border:                       1px solid @frameColorViewGridOpaque;
+
+border-left-color:            transparent;
+border-right-color:           transparent;
+border-top-color:             transparent;
+
+padding:                      @tableViewItemPadding;
+}
+
+QTableView[dataDrivenColors="true"]::item:selected
+{
+color:                        @fontColorPrimary;
+background-color:             @tableviewSelectionColorOpaque;
+}

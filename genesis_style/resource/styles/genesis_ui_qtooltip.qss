@@ -1,0 +1,16 @@
+QToolTip 
+{ 
+  font:               @RegularTextFont;
+
+  color:              #ffffff;
+  background-color:   #000000;
+
+  border-color:       transparent;
+  border-width:       1px;
+  border-radius:      @borderRadius;
+  border-style:       solid;
+
+  background-clip:    border;
+
+  padding:            @borderRadius @borderRadius @borderRadius @borderRadius;
+}

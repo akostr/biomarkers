@@ -1,0 +1,50 @@
+QRadioButton::indicator {
+    width: 40px;
+    height: 40px;
+}
+
+/* QRadioButton */
+.QRadioButton {
+  outline:          transparent;
+  font:             @RegularTextFont;
+  color:            black;
+}
+
+.QRadioButton::indicator {
+  width:  16px;
+  height: 16px;
+}
+
+/* off */
+.QRadioButton::indicator:unchecked {
+  image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_normal.png);
+}
+
+.QRadioButton::indicator:unchecked:hover {
+  image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_hover.png);
+}
+
+.QRadioButton::indicator:unchecked:pressed {
+  image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_click.png);
+}
+
+.QRadioButton::indicator:unchecked:disabled {
+  image: url(:/resource/styles/genesis/qradiobutton/radiobutton_off_disabled.png);
+}
+
+/* on */
+.QRadioButton::indicator:checked {
+  image: url(:/resource/styles/genesis/qradiobutton/radiobutton_on_normal.png);
+}
+
+.QRadioButton::indicator:checked:hover {
+  image: url(:/resource/styles/genesis/qradiobutton/radiobutton_on_hover.png);
+}
+
+.QRadioButton::indicator:checked:pressed {
+  image: url(:/resource/styles/genesis/qradiobutton/radiobutton_on_click.png);
+}
+
+.QRadioButton::indicator:checked:disabled {
+  image: url(:/resource/styles/genesis/qradiobutton/radiobutton_on_disabled.png);
+}

@@ -1,0 +1,109 @@
+QTreeView
+{
+  outline:                      transparent;
+  gridline-color:               transparent;
+  font:                         @RegularTextFont;
+  color:                        @fontColorPrimary;
+  background-color:             white;
+  border:                       none;
+}
+
+QTreeView::item
+{
+  outline:                      transparent;
+  color:                        @fontColorPrimary;
+  background-color:             white;
+  border:                       none;
+  padding:                      3px;
+}
+
+QTreeView::item:selected
+{
+  color:                        @fontColorPrimary;
+  background-color:             @tableviewSelectionColorOpaque;
+}
+
+QTreeView::branch {
+  background:                   palette(base);
+  border:                       none;
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+  border-image: none;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+  border-image: none;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+  border-image: none;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+  border-image: none;
+  image: url(:/resource/controls/collpse_rt.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+  border-image: none;
+  image: url(:/resource/controls/collpse_dn.png);
+}
+
+QTreeView::indicator {
+  width:  16px;
+  height: 16px;
+}
+
+/* off */
+QTreeView::indicator:unchecked {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_normal.png);
+}
+
+QTreeView::indicator:unchecked:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_hover.png);
+}
+
+QTreeView::indicator:unchecked:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_click.png);
+}
+
+QTreeView::indicator:unchecked:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_disabled.png);
+}
+
+/* on */
+QTreeView::indicator:checked {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_normal.png);
+}
+
+QTreeView::indicator:checked:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_hover.png);
+}
+
+QTreeView::indicator:checked:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_click.png);
+}
+
+QTreeView::indicator:checked:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_disabled.png);
+}
+
+/* part */
+QTreeView::indicator:indeterminate {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_normal.png);
+}
+
+QTreeView::indicator:indeterminate:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_hover.png);
+}
+
+QTreeView::indicator:indeterminate:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_click.png);
+}
+
+QTreeView::indicator:indeterminate:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_disabled.png);
+}

@@ -1,0 +1,25 @@
+QWidget,
+QFrame
+{
+  background-color: @brandColorLighter;
+  color:            @brandTextColorLight;
+
+  font: 10pt @fontFace;
+}
+
+#toolbarFrame
+{
+  padding: 0px;
+  margin: -1px;
+  border-bottom: 0px solid white;
+}
+
+QLabel
+{
+  font: @fontSize @fontFace;
+  color:          @brandTextColorModerate;
+}
+
+@main_toolbar_pushbutton.qss
+
+@toolbar_brand_menu.qss

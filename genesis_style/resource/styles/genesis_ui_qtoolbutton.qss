@@ -1,0 +1,46 @@
+QToolButton
+{
+  outline:            transparent;
+  font:               @RegularTextFont;
+  padding:            @pushButtonPaddingVScalablepx @pushButtonPaddingHScalablepx @pushButtonPaddingVScalablepx @pushButtonPaddingHScalablepx;
+  color:              @dialogBoxButtonSecondaryFg;
+  background-color:   @dialogBoxButtonSecondaryBg;
+  border-color:       @uiInputElementColorFrameOpaque;
+  border-width:       1px;
+  border-radius:      @borderRadius;
+  border-style:       solid;
+}
+
+QToolButton::menu-indicator
+{
+  image: url(://resource/icons/icon_notification_collapse_dn.png);
+  subcontrol-position: center center;
+  subcontrol-origin: padding;
+  left: 0px;
+}
+
+
+QToolButton:disabled
+{
+  color:              @textColorVeryPale;
+  background-color:   @uiInputElementColorBgDisabled;
+  border-color:       @uiInputElementColorBgDisabled;
+}
+
+QToolButton QPushButton:default:disabled
+{
+  color:              @textColorVeryPale;
+  background-color:   @uiInputElementColorBgDisabled;
+  border-color:       @uiInputElementColorBgDisabled;
+}
+
+QToolButton[login="true"]
+{
+  background-color:   @dialogBoxButtonPrimaryBg;
+  border-width:       2px;
+  border-color:       red;
+  border-top-left-radius:0;
+  border-top-right-radius:@borderRadius;
+  border-bottom-right-radius:@borderRadius;
+  border-bottom-left-radius:0;
+}

@@ -1,0 +1,19 @@
+/* Project Registry View */
+
+#ProjectRegistryView
+{
+  background-color: @baseColorGray;
+  padding-right:    6px;
+
+  /*border-right:     1px solid @frameColor;*/
+}
+
+QTreeView
+{
+  padding-top:      4px;
+  background-color: @baseColorGray;
+
+  outline:          transparent;
+}
+
+@ui_qmenu.qss

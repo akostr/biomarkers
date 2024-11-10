@@ -1,0 +1,21 @@
+/* ================================ */
+QPushButton
+{
+  background-color: @brandColor;
+  color:            @brandTextColorLight;
+  padding: 3px;
+  border: 1px solid @brandTextColorModeratePale;
+}
+
+QPushButton:hover
+{
+  background-color: @brandColorSelected;
+  color:            @brandTextColorLightVivid;
+  border: 1px solid @brandTextColorModerate;
+}
+
+QPushButton:disabled
+{
+  color:            @brandTextColorModeratePale;
+  border: 1px solid @brandTextColorModeratePale;
+}

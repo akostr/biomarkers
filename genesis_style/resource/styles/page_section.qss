@@ -1,0 +1,7 @@
+QLabel
+{
+  color:  @fontColorSecondary;
+  font:   @h2;
+
+  qproperty-whatsThis: "text-transform:upper;text-letterspacing:1px";
+}

@@ -1,0 +1,4 @@
+/* QAbstractItemView */
+QAbstractItemView {
+  background-color: white;
+}

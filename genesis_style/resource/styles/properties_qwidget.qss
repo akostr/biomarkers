@@ -1,0 +1,10 @@
+QWidget
+{
+  background-color: transparent;
+  /*font:             @fontSize @fontFace;*/
+}
+
+QScrollArea
+{
+  background-color: white;
+}

@@ -1,0 +1,188 @@
+QPushButton
+{
+  outline:            transparent;
+
+  font:               @RegularTextFont;
+  padding:            @pushButtonPaddingVScalablepx @pushButtonPaddingHScalablepx @pushButtonPaddingVScalablepx @pushButtonPaddingHScalablepx;
+
+  color:              @uiButtonColorSecondaryFg;
+
+  background-color:   @uiButtonColorSecondaryBg;
+  border-color:       @uiButtonColorSecondaryBg;
+  border-width:       1px;
+  border-radius:      @borderRadius;
+  border-style:       solid;
+}
+
+WebDialog QPushButton
+{
+  padding:            @dialogButtonBoxButtonPaddingVScalablepx @dialogButtonBoxButtonPaddingHScalablepx @dialogButtonBoxButtonPaddingVScalablepx @dialogButtonBoxButtonPaddingHScalablepx;
+}
+
+QPushButton:focus
+{
+  border-color:       @uiInputElementColorFrameButtonFocus;
+}
+
+QPushButton:default
+{
+  background-color:   @uiButtonColorPrimaryBg;
+  border-color:       @uiButtonColorPrimaryBg;
+}
+
+QPushButton:flat
+{
+  background-color:   transparent;
+  border-color:       transparent;
+}
+
+QPushButton:checked[checkable="true"]
+{
+  background-color: @uiButtonColorPrimaryBgChecked;
+}
+QPushButton:checked[checkable="true"]
+{
+  background-color: @uiButtonColorPrimaryBgChecked;
+}
+
+QPushButton::menu-indicator {
+    image: url(":/resource/controls/collpse_dn.png");
+    subcontrol-origin: padding;
+    subcontrol-position: right center;
+    left: -20px;
+}
+
+QPushButton[login=true]::menu-indicator
+{
+  image: url(":/resource/icons/icon_action_settings_grey.png");
+  subcontrol-position: center center;
+  subcontrol-origin: padding;
+  padding-left:       0;
+  padding-right:      0;
+  padding-top:        @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-bottom:     0;
+}
+
+QPushButton::menu-indicator:pressed, QPushButton::menu-indicator:open {
+    position: relative;
+    top: 2px;
+}
+
+QPushButton[blue="true"]
+{
+  background-color:   @dialogBoxButtonPrimaryBg;
+  border-color:       @dialogBoxButtonPrimaryBg;
+  color:              @dialogBoxButtonPrimaryFg;
+  padding-left:       @pushButtonPaddingHScalablepx;
+  padding-right:      @pushButtonPaddingHScalablepx;
+  padding-top:        @pushButtonPaddingVScalablepx;
+  padding-bottom:     @pushButtonPaddingVScalablepx;
+}
+
+QPushButton[primary="true"]
+{
+  background-color:   @uiButtonColorPrimaryBg;
+  border-color:       @uiButtonColorPrimaryBg;
+}
+
+QPushButton[menu="true"]
+{
+  padding-left:       @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-right:      @dialogButtonBoxButtonPaddingHScalablepx;
+  padding-top:        @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-bottom:     @dialogButtonBoxButtonPaddingVScalablepx;
+}
+
+QPushButton[menu_secondary="true"]
+{
+  background-color:   @dialogBoxButtonSecondaryBg;
+  border-color:       @dialogBoxButtonSecondaryBg;
+  color:              @dialogBoxButtonSecondaryFg;
+  padding-left:       @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-right:      @dialogButtonBoxButtonPaddingHScalablepx;
+  padding-top:        @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-bottom:     @dialogButtonBoxButtonPaddingVScalablepx;
+}
+
+QPushButton[menu_white="true"]
+{
+  border: 1px solid transparent;
+  background: white;
+  color: @dialogBoxButtonSecondaryFg;
+  padding-left:       @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-right:      @dialogButtonBoxButtonPaddingHScalablepx;
+  padding-top:        @dialogButtonBoxButtonPaddingVScalablepx;
+  padding-bottom:     @dialogButtonBoxButtonPaddingVScalablepx;
+}
+
+QPushButton[red="true"]
+{
+  background-color:   @dialogBoxButtonRedBg;
+  border-color:       @dialogBoxButtonRedBg;
+  color:              @dialogBoxButtonPrimaryFg;
+  padding-left:       @pushButtonPaddingHScalablepx;
+  padding-right:      @pushButtonPaddingHScalablepx;
+  padding-top:        @pushButtonPaddingVScalablepx;
+  padding-bottom:     @pushButtonPaddingVScalablepx;
+}
+
+QPushButton[secondary="true"]
+{
+  background-color:   @dialogBoxButtonSecondaryBg;
+  border-color:       @dialogBoxButtonSecondaryBg;
+  color:              @dialogBoxButtonSecondaryFg;
+  padding-left:       @pushButtonPaddingHScalablepx;
+  padding-right:      @pushButtonPaddingHScalablepx;
+  padding-top:        @pushButtonPaddingVScalablepx;
+  padding-bottom:     @pushButtonPaddingVScalablepx;
+}
+
+QPushButton[lightweight_brand="true"]
+{
+  border: 1px solid @brandColor;
+  background: white;
+  color: @brandColor;
+}
+
+QPushButton[lightweight_grey="true"]
+{
+  border: 1px solid @uiInputElementColorFrame;
+  background: white;
+  color: @dialogBoxButtonSecondaryFg;
+}
+
+QPushButton[white="true"]
+{
+  border: 1px solid transparent;
+  background: white;
+  color: @dialogBoxButtonSecondaryFg;
+}
+
+QPushButton[arrow="true"]:checked
+{
+    icon: url(":/resource/styles/genesis/qabstractspinbox/qspinbox_down@2x.png");
+}
+
+QPushButton[arrow="true"]
+{
+    icon: url(":/resource/styles/genesis/qabstractspinbox/qspinbox_up@2x.png");
+}
+
+QPushButton:disabled
+{
+  color:              @uiButtonColorSecondaryDisabledFg;
+}
+
+QPushButton[blue="true"]:disabled
+{
+  color:              @textColorVeryPale;
+  background-color:   @uiInputElementColorBgDisabled;
+  border-color:       @uiInputElementColorBgDisabled;
+}
+
+QPushButton[lightweight_brand="true"]:disabled
+{
+  color:              @textColorVeryPale;
+  background-color:   @uiInputElementColorBgDisabled;
+  border-color:       @uiInputElementColorBgDisabled;
+}

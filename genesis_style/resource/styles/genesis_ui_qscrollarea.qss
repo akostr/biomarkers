@@ -1,0 +1,4 @@
+QScrollArea .QWidget
+{
+  background-color: white;
+}

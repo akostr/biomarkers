@@ -1,0 +1,16 @@
+QWidget
+{
+  background-color: @baseColorGray;
+}
+
+.QWidget
+{
+  border-top:       1px solid @frameColor;
+}
+
+QAbstractItemView
+{
+  background-color: white;
+}
+
+@ui_qmenu.qss

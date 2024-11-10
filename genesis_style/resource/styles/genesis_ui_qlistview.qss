@@ -1,0 +1,75 @@
+QListView
+{
+  color:                        @fontColorPrimary;
+  background-color:             white;
+}
+
+QListView::item 
+{
+  color:            black;
+  background-color: white;
+  border:           @inputPadding solid white;
+}
+
+QListView::item:selected
+{
+  color:            white;
+  background-color: @brandColorDarker;
+  border:           @inputPadding solid @brandColorDarker;
+}
+
+QListView::indicator {
+  width:  16px;
+  height: 16px;
+}
+
+/* off */
+QListView::indicator:unchecked {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_normal.png);
+}
+
+QListView::indicator:unchecked:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_hover.png);
+}
+
+QListView::indicator:unchecked:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_click.png);
+}
+
+QListView::indicator:unchecked:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_disabled.png);
+}
+
+/* on */
+QListView::indicator:checked {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_normal.png);
+}
+
+QListView::indicator:checked:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_hover.png);
+}
+
+QListView::indicator:checked:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_click.png);
+}
+
+QListView::indicator:checked:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_disabled.png);
+}
+
+/* part */
+QListView::indicator:indeterminate {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_normal.png);
+}
+
+QListView::indicator:indeterminate:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_hover.png);
+}
+
+QListView::indicator:indeterminate:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_click.png);
+}
+
+QListView::indicator:indeterminate:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_disabled.png);
+}

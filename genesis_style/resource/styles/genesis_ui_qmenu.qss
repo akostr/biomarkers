@@ -1,0 +1,62 @@
+/* QMenu */
+QMenu
+{
+  font:             @RegularTextSelectListFont;
+
+  background-color: white;
+  color:            @textColorMenu;
+
+  padding-left:     @menuPadding;
+
+  border:           1px solid @frameColor;
+  border-radius:    0px;
+}
+
+QMenu::icon
+{
+  width:            20px;
+  height:           20px;
+}
+
+QMenu::icon:selected
+{
+}
+
+/* QMenu / separator */
+QMenu::separator
+{
+  height:           1px;
+  width:            1px;
+
+  background:       @frameColor;
+  border:           none;
+}
+
+/* QMenu / item */
+QMenu::item
+{
+  font:             @RegularTextSelectListFont;
+
+  padding-top:      @menuPadding;
+  padding-bottom:   @menuPadding;
+  padding-left:     @menuPadding;
+  padding-right:    @menuPaddingRight;
+
+  background-color: white;
+  color:            @textColorMenu;
+}
+
+
+QMenu::item:selected
+{
+  color:            @textColorMenuActive;
+}
+
+QMenu::item:disabled
+{
+  color:            @textColorMenuDisabled;
+}
+QMenu[rounded="true"]
+{
+  border-radius: 16px;
+}

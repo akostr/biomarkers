@@ -1,0 +1,36 @@
+QWidget#menu 
+{
+  background-color: @brandColor;
+}
+
+QFrame#propertiesContainer 
+{
+  background-color: @brandColorLighter;
+}
+
+QRadioButton::indicator 
+{
+  width:  0;
+  height: 0;
+  image:  url(:/resource/styles/null/null.png);
+}
+
+QRadioButton 
+{
+  outline:  transparent;
+  height:   32px;
+  color:    @brandTextColorModerate;
+  padding:  2px 36px 2px 10px;
+  font:     12pt @fontFace;
+}
+
+QRadioButton:unchecked:hover 
+{
+  background-color: @brandColorSelected;
+}
+
+QRadioButton:checked 
+{
+  background-color: @windowColor;
+  color:            @fontColorPrimary;
+}

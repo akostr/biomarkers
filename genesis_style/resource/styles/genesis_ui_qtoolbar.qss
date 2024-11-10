@@ -1,0 +1,15 @@
+/* QToolBar */
+QToolBar
+{
+  background: transparent;
+  border:     1px solid transparent;
+}
+
+QToolButton
+{
+  background: transparent;
+  border:     1px solid transparent;
+
+  font:       @RegularTextFont;
+  color:      @fontColorPrimary;
+}

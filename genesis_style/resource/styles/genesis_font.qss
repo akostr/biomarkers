@@ -1,0 +1,40 @@
+QLabel
+{
+  font: @RegularTextFont;
+  color: @fontColorPrimary;
+}
+
+QLabel[color="red"]
+{
+  color: red;
+}
+
+QLabel[color="brand"]
+{
+  color: @brandColor;
+}
+
+QLabel[color="black"]
+{
+  color: black;
+}
+
+QLabel[color="white"]
+{
+  color: white;
+}
+
+QLabel[color="primary"]
+{
+  color: @fontColorPrimary;
+}
+
+QLabel[color="secondary"]
+{
+  color: @fontColorSecondary;
+}
+
+QLabel:disbaled
+{
+  color:  @fontColorSecondary;
+}

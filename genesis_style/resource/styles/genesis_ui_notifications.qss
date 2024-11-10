@@ -1,0 +1,216 @@
+.NotificationPresenter
+{
+  border: none;
+  background: none;
+}
+/*
+NotificationWidget
+{
+  width: 400px;
+  background: pink;
+}*/
+
+/*/////////////INFO*/
+QWidget#InfoNotificationContent
+{
+  background-color: #DEE4E8;
+  border-color:     #DEE4E8;
+  border-width:     1px;
+  border-radius:    5px;
+}
+
+QWidget#InfoNotificationContent QPushButton
+{
+  background-color: #DEE4E8;
+  border-color:     #DEE4E8;
+}
+
+QWidget#InfoNotificationContent QLabel
+{
+font: @RegularTextFont;
+color: #002033;
+padding: 0px;
+margin: 0px;
+}
+
+QWidget#InfoNotificationContent QLabel[style="header"]
+{
+  font: @RegularBoldFont;
+  color: #002033;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*/////////////HEADERLESS*/
+QWidget#HeaderlessSuccessNotificationContent
+{
+background-color: @successColor;
+border-color:     @successColor;
+border-width:     1px;
+border-radius:    5px;
+}
+
+QWidget#HeaderlessSuccessNotificationContent QPushButton
+{
+  background-color: @successColor;
+  border-color:     @successColor;
+}
+
+QWidget#HeaderlessSuccessNotificationContent QLabel
+{
+font: @RegularTextFont;
+color: #FFFFFF;
+padding: 0px;
+margin: 0px;
+}
+
+QWidget#HeaderlessSuccessNotificationContent QLabel[style="header"]
+{
+font: @RegularBoldFont;
+color: #FFFFFF;
+padding: 0px;
+margin: 0px;
+}
+
+/*/////////////SUCCESS*/
+QWidget#SuccessNotificationContent
+{
+/*background: red;
+border: 1px solid blue;*/
+
+background-color: @successColor;
+border-color:     @successColor;
+border-width:     1px;
+
+border-radius:    5px;
+}
+
+QWidget#SuccessNotificationContent QPushButton
+{
+background-color: @successColor;
+border-color:     @successColor;
+}
+
+QWidget#SuccessNotificationContent QLabel
+{
+font: @RegularTextFont;
+color: #FFFFFF;
+/*color: black;*/
+padding: 0px;
+margin: 0px;
+}
+
+QWidget#SuccessNotificationContent QLabel[style="header"]
+{
+font: @RegularBoldFont;
+color: #FFFFFF;
+/*color: blue;*/
+padding: 0px;
+margin: 0px;
+}
+
+/*/////////////ERROR*/
+QWidget#ErrorNotificationContent
+{
+background-color: @errorColor;
+border-color:     @errorColor;
+border-width:     1px;
+border-radius:    5px;
+}
+
+QWidget#ErrorNotificationContent QPushButton
+{
+background-color: @errorColor;
+border-color:     @errorColor;
+}
+
+QWidget#ErrorNotificationContent QLabel
+{
+font: @RegularTextFont;
+color: #FFFFFF;
+padding: 0px;
+margin: 0px;
+}
+
+QWidget#ErrorNotificationContent QLabel[style="header"]
+{
+font: @RegularBoldFont;
+color: #FFFFFF;
+padding: 0px;
+margin: 0px;
+}
+
+/*/////////////WARNING*/
+QWidget#WarningNotificationContent
+{
+background-color: rgb(251, 189, 86);
+border-color:     rgb(251, 189, 86);
+border-width:     1px;
+border-radius:    5px;
+}
+
+QWidget#WarningNotificationContent QPushButton
+{
+background-color: rgb(251, 189, 86);
+border-color:     rgb(251, 189, 86);
+}
+
+QWidget#WarningNotificationContent QLabel
+{
+font: @RegularTextFont;
+color: #002033;
+padding: 0px;
+margin: 0px;
+}
+
+QWidget#WarningNotificationContent QLabel[style="header"]
+{
+font: @RegularBoldFont;
+color: #002033;
+padding: 0px;
+margin: 0px;
+}
+
+/*/////////////MULTI*/
+QWidget#MultiNotificationContent
+{
+background-color: @brandColor;
+border-color:     @brandColor;
+border-width:     1px;
+border-radius:    5px;
+}
+
+QWidget#MultiNotificationContent QWidget#multiContent
+{
+background-color: #FFFFFF;
+border-color:     #FFFFFF;
+border-width:     1px;
+border-radius:    5px;
+}
+
+QWidget#MultiNotificationContent QScrollArea
+{
+border: none;
+}
+
+QWidget#MultiNotificationContent QPushButton
+{
+background-color: @brandColor;
+border-color:     @brandColor;
+}
+
+QWidget#MultiNotificationContent QLabel
+{
+font: @RegularTextFont;
+color: #002033;
+padding: 0px;
+margin: 0px;
+}
+
+QWidget#MultiNotificationContent QLabel[style="header"]
+{
+font: @RegularBoldFont;
+color: white;
+padding: 0px;
+margin: 0px;
+}

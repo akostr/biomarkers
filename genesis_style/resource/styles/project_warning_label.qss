@@ -1,0 +1,7 @@
+QLabel
+{
+  background-color: #cd4752;
+  color: @baseColor;
+  margin: 5px 0px 5px 0px;
+  padding: 0px 4px 0px 4px;
+}

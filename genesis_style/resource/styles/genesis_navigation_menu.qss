@@ -1,0 +1,99 @@
+/* Navigation menu */
+
+QRadioButton
+{
+  outline:  transparent;
+
+  font:     @RegularTextFont;
+
+  padding:  "@pagesMenuRadioButtonPadding";
+  padding-left: 0px;
+
+  color:    "@fontColorSecondary";
+}
+
+QRadioButton:checked
+{
+  color:    "@brandColorDarker";
+}
+
+
+.QWidget
+{
+  background: white;
+  border: none;
+}
+
+QTreeWidget 
+{
+  background: white;
+  border: none;
+  font:  @RegularTextFont;
+  color: "@fontColorSecondary";
+  padding-left: 0px;
+}
+
+ViewRootLayoutPagesMenu
+{
+  background: white;
+  border: none;
+}
+
+QTreeWidget QScrollBar:vertical
+{
+  width: 5px;
+  border: none;
+  background: @whiteHalf;
+}
+
+QTreeWidget QScrollBar::handle:vertical
+{
+  background: @lightGray;
+  border-radius: 2px;
+}
+
+QTreeWidget QScrollBar::add-line:vertical {
+    border: none;
+    background: none;
+/*    subcontrol-position: right;
+    subcontrol-origin: margin;*/
+}
+
+QTreeWidget QScrollBar::sub-line:vertical {
+  border: none;
+  background: none;
+  /*    subcontrol-position: right;
+  subcontrol-origin: margin;*/
+}
+
+QTreeWidget::item {
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 2px;
+  padding-left: 0px;
+}
+QTreeWidget::item:hover {
+
+  color: @fontColorPrimary;
+}
+
+QTreeWidget::item:selected
+{
+  color: "@brandColorDarker";
+}
+
+QTreeWidget::item:selected:active
+{
+  color: "@brandColorDarker";
+}
+
+QTreeWidget::item:selected:!active
+{
+  color: "@brandColorDarker";
+}
+
+QTreeView::branch
+{
+  border: none;
+}

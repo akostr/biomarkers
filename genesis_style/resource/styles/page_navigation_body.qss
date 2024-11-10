@@ -1,0 +1,59 @@
+/* Page nagivation menu */
+QWidget#menu,
+QWidget#Menu
+{
+  background-color: @baseColorGray;
+
+  border-right:     1px solid @frameColor;
+}
+
+QFrame#propertiesContainer,
+QFrame#PropertiesContainer
+{
+  background-color: @baseColorGray;
+
+  border-right:     1px solid @frameColor;
+}
+
+QRadioButton 
+{
+  outline:          transparent;
+  height:           32px;
+  color:            @fontColorPrimary;
+  padding:          2px 36px 2px 8px;
+  font:             10pt @fontFace;
+
+  border-right:     1px solid @frameColor;
+  border-top:       1px solid @frameColor;
+}
+
+QRadioButton:enabled:unchecked:hover 
+{
+  background-color: #ffffff;
+  color:            @fontColorPrimary;
+}
+
+QRadioButton:checked
+{
+  background-color: @vividColor;
+  color:            #ffffff;
+}
+
+QRadioButton:!enabled
+{
+  background-color: @baseColorGray;
+  color:            @fontColorSecondary;
+}
+
+QRadioButton:!enabled:checked
+{
+  background-color: @vividColor;
+  color:            #ffffff;
+}
+
+QRadioButton::indicator 
+{
+  width:  0;
+  height: 0;
+  image:  url(:/resource/styles/standard/null/null.png);
+}

@@ -1,0 +1,28 @@
+/* QTextEdit */
+QTextEdit
+{
+  font:             @RegularTextFont;
+
+  color:            @uiInputElementColorText;
+  background-color: @uiInputElementColorBg;
+
+  xborder-color:     @uiInputElementColorFrameOpaque;
+  xborder-width:     1px;
+  xborder-radius:    @borderRadius;
+  xborder-style:     solid;
+
+  padding:          @inputPadding @inputPadding @inputPadding @inputPadding;
+}
+
+QTextEdit:disabled
+{
+  color:            @uiInputElementColorTextDisabled;
+
+  xborder-color:     @uiInputElementColorFrameDisabledOpaque;
+  xbackground-color: @uiInputElementColorBgDisabledOpaque;
+}
+
+QTextEdit:focus
+{
+  xborder-color:     @uiInputElementColorFrameActive;
+}

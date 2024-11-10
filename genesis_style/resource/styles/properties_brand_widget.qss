@@ -1,0 +1,8 @@
+QWidget
+{
+  background-color: @brandColorLighter; 
+  color:            @brandTextColorModerate;
+
+  font: @fontSize   @fontFace;
+}
+

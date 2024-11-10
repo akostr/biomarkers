@@ -1,0 +1,7 @@
+@genesis_font.qss
+
+QLabel
+{
+  font: @RegularBoldFont;
+  color: @fontColorPrimary;
+}

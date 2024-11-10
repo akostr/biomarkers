@@ -1,0 +1,59 @@
+.Tumbler {
+  background-color: transparent;
+  outline:          transparent;
+
+  font:             @RegularTextFont;
+  color:            @fontColorPrimary;
+}
+
+.Tumbler:disabled{
+  color:            @textColorVeryPale;
+}
+
+
+.Tumbler::indicator {
+  width:  36px;
+  height: 16px;
+}
+
+/* off */
+.Tumbler::indicator:unchecked {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_off_normal.png);
+}
+
+.Tumbler::indicator:unchecked:hover {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_off_hover.png);
+}
+
+.Tumbler::indicator:unchecked:pressed {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_off_click.png);
+}
+
+.Tumbler::indicator:unchecked:focus {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_off_focus.png);
+}
+
+.Tumbler::indicator:unchecked:disabled {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_off_disabled.png);
+}
+
+/* on */
+.Tumbler::indicator:checked {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_on_normal.png);
+}
+
+.Tumbler::indicator:checked:hover {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_on_hover.png);
+}
+
+.Tumbler::indicator:checked:pressed {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_on_click.png);
+}
+
+.Tumbler::indicator:checked:focus {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_on_focus.png);
+}
+
+.Tumbler::indicator:checked:disabled {
+  image: url(:/resource/styles/genesis/tumbler/tumbler_on_disabled.png);
+}

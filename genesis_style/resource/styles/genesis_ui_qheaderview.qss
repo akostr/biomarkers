@@ -1,0 +1,131 @@
+/* QHeaderView */
+QHeaderView 
+{
+  qproperty-defaultAlignment:   AlignLeft AlignTop;
+
+  font:                         @SecondaryBoldFont;
+
+  color:                        @fontColorPrimary;
+  background-color:             white;
+}
+
+QHeaderView::section
+{
+  padding:                      @tableViewItemPadding;
+
+  font:                         @SecondaryBoldFont;
+
+  color:                        @fontColorPrimary;
+  background-color:             white;
+
+  border:                       1px solid @frameColorViewGridOpaque;
+  
+  border-left-color:            transparent;
+  border-right-color:           @frameColorViewGridOpaque;
+  border-top-color:             transparent;
+}
+
+QHeaderView::section:vertical
+{
+  border-left-color:            @frameColorViewGridOpaque;
+  border-right-color:           transparent;
+  border-top-color:             transparent;
+}
+
+
+/* Sort indicator */
+/*
+QHeaderView::down-arrow {
+  width:  24px;
+  height: 24px;
+  subcontrol-position: right center;
+  subcontrol-origin: content;
+  image:  url(:/resource/styles/genesis/qheaderview/sort_desc.png);
+}
+
+QHeaderView::up-arrow {
+  width:  24px;
+  height: 24px;
+  subcontrol-position: right center;
+  subcontrol-origin: content;
+  image: url(:/resource/styles/genesis/qheaderview/sort_asc.png);
+}
+*/
+
+TableViewHeaderView::down-arrow {
+  width:  1px;
+  height: 1px;
+  subcontrol-position: right center;
+  subcontrol-origin: content;
+  image:  url(:/resource/styles/genesis/null/null.png);
+}
+
+TableViewHeaderView::up-arrow {
+  width:  1px;
+  height: 1px;
+  subcontrol-position: right center;
+  subcontrol-origin: content;
+  image: url(:/resource/styles/genesis/null/null.png);
+}
+
+/* corner */
+QTableView QWidget
+{
+  background-color:             white;
+}
+
+QHeaderView::indicator {
+  width:  16px;
+  height: 16px;
+}
+
+/* off */
+QHeaderView::indicator:unchecked {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_normal.png);
+}
+
+QHeaderView::indicator:unchecked:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_hover.png);
+}
+
+QHeaderView::indicator:unchecked:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_click.png);
+}
+
+QHeaderView::indicator:unchecked:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_off_disabled.png);
+}
+
+/* on */
+QHeaderView::indicator:checked {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_normal.png);
+}
+
+QHeaderView::indicator:checked:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_hover.png);
+}
+
+QHeaderView::indicator:checked:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_click.png);
+}
+
+QHeaderView::indicator:checked:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_on_disabled.png);
+}
+
+/* part */
+QHeaderView::indicator:indeterminate {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_normal.png);
+}
+
+QHeaderView::indicator:indeterminate:hover {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_hover.png);
+}
+
+QHeaderView::indicator:indeterminate:pressed {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_click.png);
+}
+
+QHeaderView::indicator:indeterminate:disabled {
+  image: url(:/resource/styles/genesis/qcheckbox/checkbox_part_disabled.png);
+}

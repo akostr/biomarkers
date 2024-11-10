@@ -1,0 +1,22 @@
+/* ================================ */
+QScrollBar:vertical
+{
+    border:     0px solid transparent;
+    background: transparent;
+    width:      10px;
+    margin:     0px;
+}
+QScrollBar::handle:vertical
+{
+    background-color: @brandColorLighterSelectedHover;
+    border-radius:    3px;
+    min-height:       20px;
+    margin:           2px 2px 2px 2px;
+}
+QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+QScrollBar::add-page:vertical {
+    background: transparent;
+}

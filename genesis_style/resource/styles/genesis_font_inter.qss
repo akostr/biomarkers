@@ -1,0 +1,22 @@
+@genesis_font.qss
+
+QLabel[style="available"]
+{
+  border: none;
+  border-radius: 10px;
+  background-color: @interSuccessColor;
+  padding-right: 5px;
+  padding-left: 5px;
+  font: @InterFont;
+  color: @white;
+}
+QLabel[style="unavailable"]
+{
+  border: none;
+  border-radius: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: @interUnsuccessColor;
+  font: @InterFont;
+  color: @textColorVeryPale;
+}

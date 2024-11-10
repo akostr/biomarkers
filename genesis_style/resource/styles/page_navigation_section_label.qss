@@ -1,0 +1,7 @@
+{
+  color:    @fontColorSecondary;
+  padding:  8px 8px 8px 8px;
+  font:     @h2;
+
+  qproperty-whatsThis: "text-transform:upper;text-letterspacing:1px";
+}

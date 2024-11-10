@@ -1,0 +1,65 @@
+@ui_qpushbutton_plain.qss
+
+QWidget
+{
+  background: white;
+}
+
+QLabel
+{
+  font-family: @fontFace;
+  color: @fontColorSecondary;
+}
+
+QPushButton
+{
+  outline:          transparent;
+
+  border-style:     solid;
+  border-width:     0px;
+  border-color:     transparent;
+  background-color: transparent;
+
+  color:            @fontColorPrimary;
+  padding:          0px; /*or what?*/
+}
+
+ProjectButton
+{
+  color: @vividColor;
+  padding-left: 23px;
+  text-align: left;
+}
+
+QPushButton:hover,
+QPushButton:pressed,
+QPushButton:focus
+{
+  border-color:     transparent;
+  background-color: transparent;
+  color: @vividColorDarker2;
+}
+
+QPushButton:disabled
+{
+  color:            @fontColorSecondary;
+
+  border-color:     transparent;
+  background-color: transparent;
+}
+
+#HomePageLeftWidget
+{
+  border-right:1px solid @frameColor;
+}
+
+#scrollAreaBackgroundWidget
+{
+  background-color: @baseColorGray;
+  border-image: url(:/resource/main_window/starter-bg_2x.png) 0 0 0 0 stretch stretch;
+}
+
+#scrollAreaContentWidget
+{
+  background-color: transparent;
+}

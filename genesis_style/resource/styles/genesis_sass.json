@@ -1,0 +1,321 @@
+{
+  "/*======================= dynamic values ===================================================*/" : "",
+  
+  "hdpi"                            : "",
+
+  "https://bugreports.qt.io/browse/QTBUG-70491"              : "",
+  "qt_version_dependent_styled_menu_left_padding_workaround" : "28px",
+
+  "/*======================= static values ===================================================*/" : "",
+
+  "fontFaceNormal"                  : "\"Segoe UI\"",
+  "fontFaceSemibold"                : "\"Segoe UI Semibold\"",
+  "fontFaceDemibold"                : "\"Segoe UI Semibold\"",
+  "fontFaceBold"                    : "\"Segoe UI\"",
+  "fontFaceSemilght"                : "\"Segoe UI\"",
+
+  "fontSizeSmallerScalableFont"     : "16",
+  "fontSizeSmallerScalableFont"     : "16",
+  "fontSizeNormalScalableFont"      : "16",
+  "fontSizeH4ScalableFont"          : "16",
+  "fontSizeH3ScalableFont"          : "18",
+  "fontSizeH2ScalableFont"          : "20",
+  "fontSizeH1_5ScalableFont"        : "25",
+  "fontSizeH1ScalableFont"          : "28",
+
+  "fontSizeModalHeadScalableFont"               : "24",
+  "fontSizeModalHdStepsScalableFont"          : "16",
+  "fontSizeRegularBoldScalableFont"             : "16",
+  "fontSizeRegularTextScalableFont"             : "16",
+  "fontSizeRegularTxtSelectListScalableFont"   : "16",
+  "fontSizeSecondaryTxtSelectListScalableFont" : "14",
+  "fontSizeSecondaryTextScalableFont"           : "14",
+  "fontSizeSecondaryBoldScalableFont"           : "14",
+  "fontSizeTabsControlsScalableFont"            : "18",
+  "fontSizeSmallTextScalableFont"               : "12",
+
+  "fontSizeModalHead"               : "@fontSizeModalHeadScalableFontpx",
+  "fontSizeModalHdSteps"          : "@fontSizeModalHdStepsScalableFontpx",
+  "fontSizeRegularBold"             : "@fontSizeRegularBoldScalableFontpx",
+  "fontSizeRegularText"             : "@fontSizeRegularTextScalableFontpx",
+  "fontSizeRegularTxtSelectList"   : "@fontSizeRegularTxtSelectListScalableFontpx",
+  "fontSizeSecondaryTxtSelectList" : "@fontSizeSecondaryTxtSelectListScalableFontpx",
+  "fontSizeSecondaryText"           : "@fontSizeSecondaryTextScalableFontpx",
+  "fontSizeSecondaryBold"           : "@fontSizeSecondaryBoldScalableFontpx",
+  "fontSizeTabsControls"            : "@fontSizeTabsControlsScalableFontpx",
+  "fontSizeSmallText"               : "@fontSizeSmallTextScalableFontpx",
+
+  "fontSizeSmaller"                 : "@fontSizeSmallerScalableFontpx",
+  "fontSizeNormal"                  : "@fontSizeNormalScalableFontpx",
+  "fontSizeH4"                      : "@fontSizeH4ScalableFontpx",
+  "fontSizeH3"                      : "@fontSizeH3ScalableFontpx",
+  "fontSizeH2"                      : "@fontSizeH2ScalableFontpx",
+  "fontSize1_5"                     : "@fontSizeH1_5ScalableFontpx",
+  "fontSizeH1"                      : "@fontSizeH1ScalableFontpx",
+
+  "fontWeightLight"                 : "200",
+  "fontWeight"                      : "400",
+  "fontWeightSemiBold"              : "600",
+  "fontWeightBold"                  : "700",
+
+  "h1"                              : "@fontWeightBold @fontSizeH1 @fontFaceBold",
+  "h2"                              : "@fontWeightSemiBold @fontSizeH2 @fontFaceSemibold",
+  "h3"                              : "@fontWeightSemiBold @fontSizeH3 @fontFaceSemibold",
+
+  "ModalHeadFont"                   : "@fontWeightSemiBold @fontSizeModalHead @fontFaceSemibold",
+  "ModalHeadStepsFont"              : "@fontWeight @fontSizeModalHdSteps @fontFaceNormal",
+  "ModalHeadConfirmationFont"       : "@fontWeightSemiBold @fontSizeSecondaryText @fontFaceNormal",
+  "RegularBoldFont"                 : "@fontWeightSemiBold @fontSizeRegularBold @fontFaceSemibold",
+  "RegularTextFont"                 : "@fontWeight @fontSizeRegularText @fontFaceNormal",
+  "RegularTextLightFont"            : "@fontWeightLight @fontSizeRegularText @fontFaceNormal",
+  "RegularTextSelectListFont"       : "@fontWeight @fontSizeRegularTxtSelectList @fontFaceNormal",
+  "SecondaryTextSelectListFont"     : "@fontWeight @fontSizeSecondaryTxtSelectList @fontFaceNormal",
+  "SecondaryTextFont"               : "@fontWeight @fontSizeSecondaryText @fontFaceNormal",
+  "SecondaryBoldFont"               : "@fontWeightBold @fontSizeSecondaryBold @fontFaceNormal",
+  "TabsControlsFont"                : "@fontWeight @fontSizeTabsControls @fontFaceNormal",
+  "SmallTextFont"                   : "@fontWeight @fontSizeSmallText @fontFaceNormal",
+  "AxisTicksTextFont"               : "200 @fontSizeSmallText @fontFaceNormal",
+  "InterFont"                       : "@fontWeightSemiBold @fontSizeSmallText @fontFaceNormal",
+
+  "h4"                              : "600 @fontSizeH4 @fontFaceSemibold",
+  "defaultFont"                     : "400 @fontSizeNormal @fontFaceNormal",
+  "defaultFontBold"                 : "600 @fontSizeNormal @fontFaceBold",
+  "h1_5"                            : "700 @fontSize1_5 @fontFaceSemibold",
+  "capHeader"                       : "600 @fontSizeH2 @FontFaceNormal",
+
+  "Qt::AlignLeft"                   : "1",
+  "Qt::AlignRight"                  : "2",
+
+  "Qt::Horizontal"                  : "1",
+  "Qt::Vertical"                    : "2",
+
+  "QFrame::NoFrame"                 : "0",
+  "QFrame::Box"                     : "1",
+  "QFrame::Panel"                   : "2",
+  "QFrame::WinPanel"                : "3",
+  "QFrame::HLine"                   : "4",
+  "QFrame::VLine"                   : "5",
+  "QFrame::StyledPanel"             : "6",
+
+  "QAbstractSpinBox::NoButtons"     : "2",
+
+  "splitterHandleSize"              : "8",
+
+  "/*======================= must be scalable ===================================================*/" : "",
+
+  "borderRadiusScalable"                    : "5.33",
+  "borderRadius"                            : "@borderRadiusScalablepx",
+  "inputPaddingScalable"                    : "10",
+  "inputPadding"                            : "@inputPaddingScalablepx",
+  "comboBoxButtonPaddingHScalable"          : "15",
+  "dialogButtonBoxButtonPaddingVScalable"   : "6",
+  "dialogButtonBoxButtonPaddingHScalable"   : "48",
+  "pushButtonPaddingVScalable"              : "6",
+  "pushButtonPaddingHScalable"              : "18",
+  "pagesMenuRadioButtonPaddingScalable"     : "10",
+  "pagesMenuRadioButtonPadding"             : "@pagesMenuRadioButtonPaddingScalablepx",
+  "toolbarElementPaddingScalable"           : "12",
+  "toolbarElementPadding"                   : "@toolbarElementPaddingScalablepx",
+  "tableViewItemPaddingScalable"            : "10",
+  "tableViewItemPadding"                    : "@tableViewItemPaddingScalablepx",
+  "menuPaddingScalable"                     : "10",
+  "menuPadding"                             : "@menuPaddingScalablepx",
+  "menuPaddingRightScalable"                : "32",
+  "menuPaddingRight"                        : "@menuPaddingRightScalablepx",
+
+  "/*======================= high level color roles ===================================================*/" : "",
+  
+  "white"                                   : "#ffffff",
+  "whiteHalf"                               : "#7fffffff",
+  "lightGray"                               : "rgb(179, 188, 194)",
+  "brandColor"                              : "#0078D2",
+  "brandColorDarker"                        : "#0071B2",
+  
+  "windowColor"                             : "#f8f9fb",
+  "baseColor"                               : "#ffffff",
+  "errorColor"                              : "#eb5757",
+  "successColor"                            : "#22C38E",
+  "warningColor"                            : "#FBBD56",
+  "interSuccessColor"                       : "#24c38e",
+  "interUnsuccessColor"                     : "#edf2f4 ",
+  
+  "frameColor"                              : "#ecf1f4",
+  "frameColorDarker"                        : "#47004269",
+  "frameColorViewGrid"                      : "#33004166",
+  "frameColorViewGridOpaque"                : "#f0f4f6",
+  
+  "fontColorPrimary"                        : "rgb(0, 32, 51)",
+  "fontColorPrimaryLight"                   : "rgb(178, 188, 193)",
+  "fontColorSecondary"                      : "#667985",
+  "textColor"                               : "#002033",
+  "textColorPale"                           : "rgb(102, 121, 133)",
+  "textColorVeryPale"                       : "#afbbc2",
+  "textColorVivid"                          : "@brandColor",
+  "textColorVividDarker"                    : "@brandColorDarker",
+  "textColorButton"                         : "#2f5e7a",
+  "textColorButtonPale"                     : "#5900395c",
+  "textColorClickable"                      : "#cc00395c",
+  "textColorClickableActive"                : "@brandColor",
+  "textColorClickableVivid"                 : "@brandColor",
+  "textColorLink"                           : "#0078D2",
+  "textColorInputAlert"                     : "#EF5350",
+  "textColorMenu"                           : "#002033",
+  "textColorMenuDisabled"                   : "#afbbc2",
+  "textColorMenuActive"                     : "@brandColorDarker",
+  "textColorError"                          : "#EB3333",
+
+  "uiInputElementColorText"                 : "#002033",
+  "uiInputElementColorTextDisabled"         : "#99a6ad",
+
+  "uiInputElementColorBg"                   : "#ffffff",
+  "uiInputElementColorBgDisabled"           : "#edf2f4",
+  "uiInputElementColorBgSecondary"          : "#ecf1f4",
+  "uiInputElementColorBgDisabledOpaque"     : "#edf2f4",
+
+  "uiInputElementColorFrame"                : "#47004269",
+  "uiInputElementColorFrameOpaque"          : "#b8cad5",
+  "uiInputElementColorFrameActive"          : "#99002033",
+  "uiInputElementColorFrameDisabled"        : "transparent",
+  "uiInputElementColorFrameDisabledOpaque"  : "#edf2f4",
+  "uiInputElementColorFrameButtonFocus"     : "#99002033",
+  "uiInputElementColorPlaceholder"          : "#59002033",
+
+  "uiButtonColorPrimaryBg"            : "#11004269",
+  "uiButtonColorPrimaryBgChecked"     : "#11004220",
+  "uiButtonColorPrimaryBgPressed"     : "@brandColor",
+  "uiButtonColorPrimaryFgPressed"     : "#ffffff",
+  "uiButtonColorPrimaryFg"            : "@textColorButton",
+
+  "uiButtonColorSecondaryBg"          : "#ffffffff",
+  "uiButtonColorSecondaryFg"          : "@textColorButton",
+  "uiButtonColorSecondaryDisabledFg"  : "@textColorButtonPale",
+
+  "dialogBoxButtonPrimaryBg"          : "@brandColor",
+  "dialogBoxButtonRedBg"              : "rgb(235,87,87)",
+  "dialogBoxButtonPrimaryFg"          : "#ffffff",
+  "dialogBoxButtonSecondaryBg"        : "#edf2f4",
+  "dialogBoxButtonSecondaryFg"        : "@textColorButton",
+
+  "toolbarColorBg"                    : "#ecf1f4",
+  "toolbarColorFg"                    : "#99002033",
+
+  "toolbarElementColorBg"             : "@toolbarColorBg",
+  "toolbarElementColorBgHover"        : "#DEE4E8",
+  "toolbarElementColorBgActive"       : "#47004269",
+  "toolbarElementColorFg"             : "@toolbarColorFg",
+  "toolbarElementColorFrFocus"        : "#99002033",
+
+  "scrollbarBg"                       : "#15004269",
+  "scrollbarBgOpaque"                 : "#f0f4f6",
+  "scrollbarFg"                       : "#3D004269",
+  "scrollbarFgOpaque"                 : "#b7cad4",
+  
+  "tableviewSelectionColor"           : "#13002033",
+  "tableviewSelectionColorOpaque"     : "#f2f4f4",
+
+  "/*======================= qt palete color roles ===================================================*/" : "",
+
+  "headerViewBorder"                  : "white",
+  "headerViewBorderHover"             : "white",
+  "headerViewBorderActive"            : "white",
+  
+  "headerViewBackground"              : "white",
+  "headerViewBackgroundHover"         : "white",
+  "headerViewBackgroundActive"        : "white",
+
+  "/*======================= qt palete color roles ===================================================*/" : "",
+
+  "xpalette::WindowText::Active"         : "@textColor",
+  "xpalette::WindowText::Disabled"       : "@textColorPale",
+  "xpalette::WindowText::Inactive"       : "@textColor",
+
+  "xpalette::Button::Active"             : "#f0f0f0",
+  "xpalette::Button::Disabled"           : "#f0f0f0",
+  "xpalette::Button::Inactive"           : "#f0f0f0",
+
+  "xpalette::Light::Active"              : "#ffffff",
+  "xpalette::Light::Disabled"            : "#ffffff",
+  "xpalette::Light::Inactive"            : "#ffffff",
+
+  "xpalette::Midlight::Active"           : "#e3e3e3",
+  "xpalette::Midlight::Disabled"         : "#e3e3e3",
+  "xpalette::Midlight::Inactive"         : "#f7f7f7",
+
+  "xpalette::Dark::Active"               : "#a0a0a0",
+  "xpalette::Dark::Disabled"             : "#a0a0a0",
+  "xpalette::Dark::Inactive"             : "#a0a0a0",
+
+  "xpalette::Mid::Active"                : "#a0a0a0",
+  "xpalette::Mid::Disabled"              : "#a0a0a0",
+  "xpalette::Mid::Inactive"              : "#a0a0a0",
+
+  "xpalette::Text::Active"               : "@textColor",
+  "xpalette::Text::Disabled"             : "@textColorPale",
+  "xpalette::Text::Inactive"             : "@textColor",
+
+  "xpalette::BrightText::Active"         : "@vividColorText",
+  "xpalette::BrightText::Disabled"       : "@vividColorTextDisabled",
+  "xpalette::BrightText::Inactive"       : "@vividColorText",
+    
+  "xpalette::ButtonText::Active"         : "@textColor",
+  "xpalette::ButtonText::Disabled"       : "@textColorPale",
+  "xpalette::ButtonText::Inactive"       : "@textColor",
+
+  "xpalette::Base::Active"               : "@baseColor",
+  "xpalette::Base::Disabled"             : "@baseColorDisabled",
+  "xpalette::Base::Inactive"             : "@baseColor",
+  
+  "xpalette::Window::Active"             : "@windowColor",
+  "xpalette::Window::Disabled"           : "@windowColor",
+  "xpalette::Window::Inactive"           : "@windowColor",
+
+  "xpalette::Shadow::Active"             : "#696969",
+  "xpalette::Shadow::Disabled"           : "#696969",
+  "xpalette::Shadow::Inactive"           : "##000000",
+
+  "xpalette::Highlight::Active"          : "@vividColor",
+  "xpalette::Highlight::Disabled"        : "@vividColorDisabled",
+  "xpalette::Highlight::Inactive"        : "@vividColorInactive",
+
+  "xpalette::HighlightedText::Active"    : "@vividColorText",
+  "xpalette::HighlightedText::Disabled"  : "@vividColorTextDisabled",
+  "xpalette::HighlightedText::Inactive"  : "@vividColorTextInactive",
+
+  "xpalette::Link::Active"               : "@textColorLink",
+  "xpalette::Link::Disabled"             : "@textColorLink",
+  "xpalette::Link::Inactive"             : "@textColorLink",
+
+  "xpalette::LinkVisited::Active"        : "@vividColorDarker",
+  "xpalette::LinkVisited::Disabled"      : "@vividColorDarker",
+  "xpalette::LinkVisited::Inactive"      : "@vividColorDarker",
+  
+  "xpalette::AlternateBase::Active"      : "@baseColorAlternate",
+  "xpalette::AlternateBase::Disabled"    : "@baseColorAlternateDisabled",
+  "xpalette::AlternateBase::Inactive"    : "@baseColorAlternate",
+
+  "xpalette::NoRole::Active"             : "@vividColor",
+  "xpalette::NoRole::Disabled"           : "@vividColor",
+  "xpalette::NoRole::Inactive"           : "@vividColor",
+
+  "xpalette::ToolTipBase::Active"        : "#ffffdc",
+  "xpalette::ToolTipBase::Disabled"      : "#ffffdc",
+  "xpalette::ToolTipBase::Inactive"      : "#ffffdc",
+
+  "xpalette::ToolTipText::Active"        : "#000000",
+  "xpalette::ToolTipText::Disabled"      : "#000000",
+  "xpalette::ToolTipText::Inactive"      : "#000000",
+
+  "xpalette::PlaceholderText::Active"    : "#80000000",
+  "xpalette::PlaceholderText::Disabled"  : "#80000000",
+  "xpalette::PlaceholderText::Inactive"  : "#80000000",
+  
+  "xpalette::Foreground::Active"         : "@palette::WindowText::Active",
+  "xpalette::Foreground::Disabled"       : "@palette::WindowText::Disabled",
+  "xpalette::Foreground::Inactive"       : "@palette::WindowText::Inactive",
+
+  "xpalette::Background::Active"         : "@palette::Window::Active",
+  "xpalette::Background::Disabled"       : "@palette::Window::Disabled",
+  "xpalette::Background::Inactive"       : "@palette::Window::Inactive",
+
+  "/*======================= EOF ===================================================*/" : ""
+}

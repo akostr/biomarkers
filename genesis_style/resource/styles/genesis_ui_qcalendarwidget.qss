@@ -1,0 +1,30 @@
+QCalendarWidget QSpinBox
+{
+  padding:          0px 0px 0px 0px;
+}
+
+QCalendarWidget QAbstractItemView
+{
+  color:                      @fontColorPrimary;
+  background-color:           white;
+
+  selection-color:            white;
+  selection-background-color: @brandColor;
+}
+
+QCalendarWidget QAbstractItemView::item:selected
+{
+  color:                      white;
+  background-color:           @brandColor;  
+}
+
+QCalendarWidget QAbstractItemView::item:disabled
+{
+  color:                      @textColorVeryPale;
+}
+
+QCalendarWidget QToolButton#qt_calendar_monthbutton::menu-indicator
+{
+  image: none;
+  width: 0px;  
+}

@@ -1,0 +1,22 @@
+QAbstractItemView#completerPopup
+{
+  border:                       1px solid @uiInputElementColorFrameOpaque;
+  padding:                      3px;
+
+  color:                        @fontColorPrimary;
+  background-color:             white;
+}
+
+QAbstractItemView#completerPopup::item
+{
+  color:            black;
+  background-color: white;
+  border:           @inputPadding solid white;
+}
+
+QAbstractItemView#completerPopup::item:selected
+{
+  color:            white;
+  background-color: @brandColorDarker;
+  border:           @inputPadding solid @brandColorDarker;
+}
