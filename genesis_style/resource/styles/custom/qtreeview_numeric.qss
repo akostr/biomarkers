@@ -1,0 +1,197 @@
+/* QTreeView*/
+QTreeView
+{
+  outline:                      transparent;
+
+  gridline-color:               @frameColorViewGridOpaque;
+  
+  font:                         @RegularTextFont;
+
+  color:                        @fontColorPrimary;
+  background-color:             white;
+}
+
+QTreeView[frameShape="@QFrame::Box"]
+{
+  border:                       1px solid @frameColorViewGridOpaque;
+}
+
+QTreeView[frameShape="@QFrame::Panel"]
+{
+  border:                       1px solid @frameColorViewGridOpaque;
+}
+
+QTreeView[frameShape="@QFrame::StyledPanel"]
+{
+  border:                       1px solid @frameColorViewGridOpaque;
+}
+
+QTreeView::item
+{
+  outline:                      transparent;
+
+  color:                        @fontColorPrimary;
+  background-color:             white;
+
+  border:                       1px solid;
+
+  border-bottom-color:          rgb(218, 226, 232);
+  border-left-color:            none;
+  border-right-color:           none;
+  border-top-color:             none;
+
+  padding:                      @tableViewItemPadding;
+}
+
+QTreeView::item:selected
+{
+  color:                        @fontColorPrimary;
+  background-color:             @tableviewSelectionColorOpaque;
+
+  border:                       none;
+  /*
+  border-bottom-color:          rgb(218, 226, 232);
+  border-left-color:            none;
+  border-right-color:           none;
+  border-top-color:             none;
+  */
+}
+
+QTreeView::item
+{
+outline:                      transparent;
+
+color:                        none;
+background-color:             transparent;
+
+border:                       1px solid;
+
+border-bottom-color:          rgb(218, 226, 232);
+border-left-color:            none;
+border-right-color:           none;
+border-top-color:             none;
+
+padding:                      @tableViewItemPadding;
+}
+
+QTreeView::item:selected
+{
+color:                        @fontColorPrimary;
+background-color:             rgba(0,78,118,26);
+
+border:                       none;
+/*
+border-bottom-color:          rgb(218, 226, 232);
+border-left-color:            none;
+border-right-color:           none;
+border-top-color:             none;
+*/
+}
+
+QTreeView QHeaderView::section {
+  border:                       1px solid @frameColorViewGridOpaque;
+
+  border-left-color:            transparent;
+  /*border-right-color:           transparent;*/
+  border-top-color:             transparent;
+}
+
+/*
+QTreeView::branch {
+        background: rgb(218, 226, 232);
+}
+*/
+
+/*
+color:                        @fontColorPrimary;
+background-color:             background: rgb(255, 2, 2);
+*/
+
+QTreeView::item:!has-children
+
+{
+  background: rgb(218, 226, 232);
+
+  border:                       none;
+}
+
+QTreeView::branch:!has-children
+{
+  background: rgb(218, 226, 232);
+
+}
+
+
+
+/*
+
+QTreeView::branch {
+  background:                   palette(base);
+  border: 1px solid             rgb(218, 226, 232);
+  border-left-color:            transparent;
+  border-right-color:           transparent;
+  border-top-color:             transparent;
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+  border-image: none;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+  border-image: none;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+  border-image: none;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+  border-image: none;
+  image: url(:/resource/controls/collpse_rt.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+  border-image: none;
+  image: url(:/resource/controls/collpse_dn.png);
+}
+
+*/
+
+
+
+/*
+есть младшие, не примыкает к элементу
+QTreeView::branch:has-siblings:!adjoins-item {
+  background: cyan;
+}
+#eсть младшие, примыкает к элементу
+QTreeView::branch:has-siblings:adjoins-item {
+  background: red;
+}
+#нет дочерних, нет младших, примыкает к элементу
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+  background: blue;
+}
+
+#закрыт, есть дочерние, есть младшие
+QTreeView::branch:closed:has-children:has-siblings {
+  background: pink;
+}
+
+#закрыт, есть дочерние, нет младших
+QTreeView::branch:has-children:!has-siblings:closed {
+  background: gray;
+}
+
+#открыт, есть дочерние, есть младшие
+QTreeView::branch:open:has-children:has-siblings {
+  background: magenta;
+}
+
+#открыт, есть дочерние, нет младших
+QTreeView::branch:open:has-children:!has-siblings {
+  background: green;
+}
+*/
