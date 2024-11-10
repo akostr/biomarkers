@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MCRComponentSettings</class>
+ <widget class="QWidget" name="MCRComponentSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>171</width>
+    <height>148</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="ComponentNumbeLabel">
+       <property name="text">
+        <string>Component number</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_star">
+       <property name="text">
+        <string>*</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QComboBox" name="SampleComboBox">
+     <property name="currentText">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Tumbler" name="NonNegativeConcentrationCheckBox">
+     <property name="text">
+      <string>Non negative concentration</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Tumbler" name="NonNegativeSpectral">
+     <property name="text">
+      <string>Non negative spectral</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Tumbler" name="FixCheckBox">
+     <property name="text">
+      <string>Fix</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Tumbler</class>
+   <extends>QCheckBox</extends>
+   <header>extern/common_gui/standard_widgets/tumbler.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
