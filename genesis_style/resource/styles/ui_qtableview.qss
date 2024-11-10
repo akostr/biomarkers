@@ -1,0 +1,18 @@
+QTableView
+{
+  gridline-color:               @itemViewGridColor;
+
+  color:                        @fontColorPrimary;
+  selection-color:              @itemViewSelectionForegroundColor;
+  selection-background-color:   @itemViewSelectionBackgroundColorTransparent;
+
+  background-color:             white;
+  alternate-background-color:   @lightGrayColor;
+}
+
+QTableView:disabled
+{
+  border-color:     @uiElementFrameDisabled;
+  background-color: @uiElementInputBackgroundDisabled;
+  color:            @uiElementInputTextDisabled;
+}

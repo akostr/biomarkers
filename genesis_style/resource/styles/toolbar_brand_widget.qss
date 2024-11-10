@@ -1,0 +1,13 @@
+QWidget
+{
+  background-color: @brandColorLighter;
+  color:            @brandTextColorModeratePale;
+
+  font: @fontSize @fontFace;
+}
+
+QLabel
+{
+  font: @fontSize @fontFace;
+  color: @brandTextColorModerate;
+}

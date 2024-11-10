@@ -1,0 +1,34 @@
+/* ================================ */
+QSlider
+{
+  min-height: 36px;
+  max-height: 36px;
+}
+
+QSlider::groove:horizontal
+{
+  height: 4px;
+  margin: 0 12px;
+
+  background: @brandTextColorVeryPale;
+}
+
+QSlider::handle:horizontal
+{
+  background: @brandTextColorModerate;
+
+  width:  6px;
+  height: 12px;
+  margin: -8px -4px;
+}
+
+QSlider::handle:horizontal:disabled
+{
+  background: @brandTextColorVeryPale;
+}
+
+QSlider::handle:horizontal:hover
+{
+  background: @brandTextColorLight;
+}
+

@@ -1,0 +1,60 @@
+/* QCheckBox */
+.QCheckBox {
+  outline:          transparent;
+}
+
+.QCheckBox::indicator {
+  width:  16px;
+  height: 16px;
+}
+
+/* off */
+.QCheckBox::indicator:unchecked {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_off_normal@hdpi.png);
+}
+
+.QCheckBox::indicator:unchecked:hover {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_off_hover@hdpi.png);
+}
+
+.QCheckBox::indicator:unchecked:pressed {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_off_click@hdpi.png);
+}
+
+.QCheckBox::indicator:unchecked:disabled {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_off_disabled@hdpi.png);
+}
+
+/* on */
+.QCheckBox::indicator:checked {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_on_normal@hdpi.png);
+}
+
+.QCheckBox::indicator:checked:hover {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_on_hover@hdpi.png);
+}
+
+.QCheckBox::indicator:checked:pressed {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_on_click@hdpi.png);
+}
+
+.QCheckBox::indicator:checked:disabled {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_on_disabled@hdpi.png);
+}
+
+/* part */
+.QCheckBox::indicator:indeterminate {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_part_normal@hdpi.png);
+}
+
+.QCheckBox::indicator:indeterminate:hover {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_part_hover@hdpi.png);
+}
+
+.QCheckBox::indicator:indeterminate:pressed {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_part_click@hdpi.png);
+}
+
+.QCheckBox::indicator:indeterminate:disabled {
+  image: url(:/resource/styles/standard/qcheckbox/checkbox_part_disabled@hdpi.png);
+}

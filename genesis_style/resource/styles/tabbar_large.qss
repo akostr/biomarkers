@@ -1,0 +1,22 @@
+QWidget#TabViewContainer
+{
+  background: white;
+}
+
+QTabWidget::tab-bar
+{
+  left: 8px;
+}
+
+QTabWidget::pane
+{
+  border-top: 4px solid white;
+  background: transparent;
+}
+
+QWidget#TabViewBottom
+{
+  background: white;
+}
+
+@ui_qtabwidget_qtabbar_large.qss

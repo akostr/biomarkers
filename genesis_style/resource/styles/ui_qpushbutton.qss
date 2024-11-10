@@ -1,0 +1,180 @@
+/* QPushButton primary */
+QPushButton::menu-indicator
+{
+  image: none;
+  width: -2px;
+}
+
+.QPushButton
+{
+  outline:          transparent;
+
+  border-style:     solid;
+  border-radius:    3px;
+  border-width:     1px;
+
+  border-color:     "@vividElementColor";
+  background-color: "@vividElementColor";
+  
+  color:            "@vividColorText";
+  padding:          3px;
+}
+
+.QPushButton:hover
+{
+  border-color:     "@vividElementColorHover";
+  background-color: "@vividElementColorHover";
+}
+
+.QPushButton:pressed
+{
+  border-color:     "@vividElementColorClick";
+  background-color: "@vividElementColorClick";
+}
+
+.QPushButton:focus
+{
+  border-color:     "@vividElementColorFocus";
+  background-color: "@vividElementColorFocus";
+}
+
+.QPushButton:disabled
+{
+  border-color:     "@vividElementColorDisabled";
+  background-color: "@vividElementColorDisabled";
+}
+
+/* QPushButton secondary */
+.QPushButton:flat
+{
+  outline:          transparent;
+
+  border-style:     solid;
+  border-radius:    3px;
+  border-width:     1px;
+  
+  border-color:     "@vividBorderElementBdColor";
+  background-color: "@vividBorderElementBgColor";
+  color:            "@vividBorderElementFgColor";
+
+  padding:          3px;
+}
+
+.QPushButton:flat:hover
+{
+  border-color:     "@vividBorderElementBdColorHover";
+  background-color: "@vividBorderElementBgColorHover";
+  color:            "@vividBorderElementFgColorHover";
+}
+
+.QPushButton:flat:pressed
+{
+  border-color:     "@vividBorderElementBdColorClick";
+  background-color: "@vividBorderElementBgColorClick";
+  color:            "@vividBorderElementFgColorClick";
+}
+
+.QPushButton:flat:focus
+{
+  border-color:     "@vividBorderElementBdColorFocus";
+  background-color: "@vividBorderElementBgColorFocus";
+  color:            "@vividBorderElementFgColorFocus";
+}
+
+.QPushButton:flat:focus:pressed
+{
+  border-color:     "@vividBorderElementBdColorClick";
+  background-color: "@vividBorderElementBgColorClick";
+  color:            "@vividBorderElementFgColorClick";
+}
+
+.QPushButton:flat:disabled
+{
+  border-color:     "@vividBorderElementBdColorDisabled";
+  background-color: "@vividBorderElementBgColorDisabled";
+  color:            "@vividBorderElementFgColorDisabled";
+}
+
+/* QPushButton[critical="true"] */
+.QPushButton[critical="true"]
+{
+  border-color:     "@criticalColor";
+  background-color: "@criticalColor";
+  
+  color:            "@vividColorText";
+}
+
+.QPushButton[critical="true"]:hover
+{
+  border-color:     "@criticalColorHover";
+  background-color: "@criticalColorHover";
+
+  color:            "@vividColorText";
+}
+
+.QPushButton[critical="true"]:pressed 
+{
+  border-color:     "@criticalColorPressed";
+  background-color: "@criticalColorPressed";
+
+  color:            "@vividColorText";
+}
+
+.QPushButton[critical="true"]:focus 
+{
+  border-color:     "@criticalColorFocus";
+  background-color: "@criticalColorFocus";
+
+  color:            "@vividColorText";
+}
+
+.QPushButton[critical="true"]:disabled
+{
+  border-color:     "@criticalColorDisabled";
+  background-color: "@criticalColorDisabled";
+
+  color:            "@vividColorText";
+}
+
+/* QPushButton[gray="true"] */
+.QPushButton[gray="true"]
+{
+  padding:          1px;
+
+  border-color:     "@baseColorGrayDarker2";
+  background-color: "@baseColorGrayDarker2";
+  
+  color:            "@vividColorText";
+}
+
+.QPushButton[gray="true"]:hover
+{
+  border-color:     "@baseColorGrayDarker3";
+  background-color: "@baseColorGrayDarker3";
+
+  color:            "@vividColorText";
+}
+
+.QPushButton[gray="true"]:pressed 
+{
+  border-color:     "@baseColorGrayDarker3";
+  background-color: "@baseColorGrayDarker3";
+
+  color:            "@vividColorText";
+}
+
+.QPushButton[gray="true"]:focus
+{
+  border-color:     "@baseColorGrayDarker3";
+  background-color: "@baseColorGrayDarker3";
+
+  color:            "@vividColorText";
+}
+
+.QPushButton[gray="true"]:disabled
+{
+  border-color:     "@baseColorGrayDarker2Half";
+  background-color: "@baseColorGrayDarker2Half";
+
+  color:            "@vividColorText";
+}

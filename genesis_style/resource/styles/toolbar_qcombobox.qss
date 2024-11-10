@@ -1,0 +1,85 @@
+/* toolbar / QComboBox */
+QComboBox
+{
+  border-color:     white;
+  border-width:     0px;
+  border-radius:    0px;
+  border-style:     solid;
+
+  background-color: white;
+  color:            @fontColorPrimary;
+
+  /* obsolete */
+  border:           0px;
+  spacing:          0px;
+
+  padding:          2px 7px 2px 5px;
+}
+
+QComboBox QWidget
+{
+  background-color: white;
+  color:            @fontColorPrimary;
+}
+
+QComboBox:hover
+{
+  border-color:     white;
+
+  background-color: white;
+  color:            @textColorVivid;
+}
+
+QComboBox:focus,on
+{
+  border-color:     white;
+
+  background-color: white;
+  color:            @textColorVivid;
+}
+
+QComboBox:disabled
+{
+  border-color:     white;
+  background-color: white;
+  color:            @fontColorSecondary;
+}
+
+QComboBox::drop-down
+{
+  border: 0px;
+
+  /* obsolete */
+  subcontrol-origin:   content;
+  subcontrol-position: right;
+
+  width:               8px;
+  height:              4px;
+
+  padding-left:        8px;
+}
+
+QComboBox:down-arrow
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow@hdpi.png);
+}
+
+QComboBox:down-arrow:hover
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow_hover@hdpi.png);
+}
+
+QComboBox:down-arrow:focus
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow_active@hdpi.png);
+}
+
+QComboBox:down-arrow:on
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow_shown@hdpi.png);
+}
+
+QComboBox:down-arrow:disabled
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow_disabled@hdpi.png);
+}

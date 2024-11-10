@@ -1,0 +1,17 @@
+/* ================================ */
+QPushButton
+{
+  border: 0px;
+  padding: 4px 4px 4px 4px;
+}
+
+QPushButton:hover
+{
+  background-color: @brandColorLighterHover;
+}
+
+QPushButton::menu-indicator
+{
+  image: none;
+  width: 0px;
+}

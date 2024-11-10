@@ -1,0 +1,56 @@
+QTabBar
+{
+  background: white;
+}
+
+QTabBar::tab
+{
+  background: @lightGrayColor;
+  color:      @fontColorPrimary;
+}
+
+QTabBar::tab:hover
+{
+  background: @lightGrayColor2;
+  color:      @textColorVivid;
+}
+
+QTabBar::tab:selected
+{
+  background: @lightGrayColor2;
+  color:      @textColorVivid;
+}
+
+QTabBar::tab:disabled
+{
+  background: @lightGrayColor;
+  color:      @fontColorSecondary;
+}
+
+QTabBar QToolButton::left-arrow
+{
+  background: @lightGrayColor;
+  image: url(:/resource/styles/standard/spinner/spin_lt@hdpi.png);
+}
+
+QTabBar QToolButton::right-arrow
+{
+  background: @lightGrayColor;
+  image: url(:/resource/styles/standard/spinner/spin_rt@hdpi.png);
+}
+
+QTabBar QToolButton
+{
+  border-width: 0px;
+  border:       none;
+}
+
+QTabBar::close-button
+{ 
+  image: url(:/resource/styles/standard/tab/close.png);
+}
+
+QTabBar::close-button:hover
+{
+  image: url(:/resource/styles/standard/tab/close_hover.png);
+}

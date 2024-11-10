@@ -1,0 +1,10 @@
+QLabel
+{
+  font-family:  @fontFace;
+  color:        @fontColorPrimary;
+}
+
+QLabel:disabled
+{
+  color:        @fontColorSecondary;
+}

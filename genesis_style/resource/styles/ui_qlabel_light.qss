@@ -1,0 +1,10 @@
+QLabel#HomePageBrandLabel
+{
+  font-family:  @fontFaceSemilght;
+}
+
+QLabel#HomePageRecentProjectsLabel
+{
+  font-family:  @fontFaceSemilght;
+}
+

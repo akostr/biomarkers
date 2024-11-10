@@ -1,0 +1,117 @@
+/* QAbstractSpinBox displayed as label */
+QAbstractSpinBox
+{
+  min-height:           22px;
+  padding-left:         3px;
+
+  border-width:         1px; 
+  border-radius:        3px;
+  border-style:         solid;
+
+  background-color:     transparent;
+  border-color:         transparent;
+  color:                @fontColorPrimary;
+}
+
+QAbstractSpinBox:hover
+{
+  background-color:     transparent;
+  border-color:         transparent;
+  color:                @fontColorPrimary;
+}
+
+QAbstractSpinBox:focus
+{
+  background-color:     transparent;
+  border-color:         transparent;
+  color:                @fontColorPrimary;
+}
+
+QAbstractSpinBox:disabled
+{
+  background-color:     transparent;
+  border-color:         transparent;
+  color:                @fontColorPrimary;
+}
+
+QAbstractSpinBox::up-button, 
+QAbstractSpinBox::down-button 
+{
+  width:           14px;
+  height:          11px;
+
+  padding-left:    0px;
+  padding-right:   0px;
+
+  border:          0px;
+  border-radius:   0px;
+}
+
+QAbstractSpinBox[buttonSymbols="@QAbstractSpinBox::NoButtons"]::up-button,
+QAbstractSpinBox[buttonSymbols="@QAbstractSpinBox::NoButtons"]::down-button
+{
+  width:           0px;
+}
+
+QAbstractSpinBox::up-button:hover, 
+QAbstractSpinBox::down-button:hover
+{
+  background-color:   transparent;
+}
+
+QAbstractSpinBox::up-button:pressed,
+QAbstractSpinBox::down-button:pressed
+{
+  background-color:   transparent;
+}
+
+QAbstractSpinBox::up-button
+{
+  padding-top:     1px;
+  padding-bottom:  -1px;
+
+  border-top-right-radius: 2px;
+
+  subcontrol-origin:   content;
+  subcontrol-position: top right;
+}
+
+QAbstractSpinBox::down-button 
+{
+  padding-top:     -1px;
+  padding-bottom:  1px;
+
+  border-bottom-right-radius: 2px;
+
+  subcontrol-origin:   content;
+  subcontrol-position: bottom right;
+}
+
+QAbstractSpinBox::up-arrow 
+{
+  image: none;
+
+  width:  6px;
+  height: 3px;
+}
+
+QAbstractSpinBox::up-arrow:disabled,
+QAbstractSpinBox::up-arrow:off 
+{
+  image: none;
+}
+
+QAbstractSpinBox::down-arrow 
+{
+  image: none;
+
+  width:  6px;
+  height: 3px;
+}
+
+QAbstractSpinBox::down-arrow:disabled,
+QAbstractSpinBox::down-arrow:off 
+{
+  image: none;
+}
+

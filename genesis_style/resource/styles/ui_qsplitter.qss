@@ -1,0 +1,39 @@
+/* QSplitter */
+QSplitter::handle 
+{
+  width:            @splitterHandleSize;
+  height:           @splitterHandleSize;
+
+  background-color: @baseColorGrayHalfOnWhite;
+}
+
+QSplitter[baseColorGray="true"]::handle
+{
+  background-color: @baseColorGray;
+}
+
+QSplitter::handle:horizontal
+{
+  /*
+  border-left:    1px solid @frameColor;
+  border-right:   1px solid @frameColor;
+  */
+
+  image: url(:/resource/styles/standard/qsplitter/qsplitter_horizontal@hdpi.png);
+}
+
+QSplitter::handle:vertical
+{
+  /*
+  border-top:     1px solid @frameColor;
+  border-bottom:  1px solid @frameColor;
+  */
+
+  image: url(:/resource/styles/standard/qsplitter/qsplitter_vertical@hdpi.png);
+}
+
+
+QSplitter::handle:pressed
+{
+  background-color: @lightGrayColor2;
+}

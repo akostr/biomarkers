@@ -1,0 +1,7 @@
+@ui_qtabwidget_qtabbar.qss
+
+QTabWidget::pane
+{
+  border: 1px solid @lightGrayColor2;
+}
+

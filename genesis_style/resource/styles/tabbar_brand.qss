@@ -1,0 +1,49 @@
+QWidget#TabViewContainer
+{
+  background: @brandColor;
+}
+
+QTabWidget::tab-bar
+{
+  left: 8px;
+}
+
+QTabWidget::pane
+{
+  border-top: 4px solid @brandColorLighterSelectedHover;
+  background: transparent;
+}
+
+QWidget#TabViewBottom
+{
+  background: @brandColorLighterSelectedHover;
+}
+
+QTabBar
+{
+  background: @brandColor;
+}
+
+QTabBar::tab
+{
+  background: @brandColorLighter;
+  color:      @brandTextColorModerate;
+}
+
+QTabBar::tab:hover
+{
+  background: @brandColorLighterSelected;
+  color:      @brandTextColorLight;
+}
+
+QTabBar::tab:selected
+{
+  background: @brandColorLighterSelectedHover;
+  color:      @brandTextColorLightVivid;
+}
+
+QTabBar QToolButton
+{
+  border-width: 0px;
+  border:       none;
+}

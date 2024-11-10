@@ -1,0 +1,8 @@
+/* QComboBox editor */
+QAbstractItemView QComboBox:!editable,
+QAbstractItemView QComboBox:editable
+{
+  border-radius:  0px;
+  min-height:     20px;
+  padding-left:   3px;
+}

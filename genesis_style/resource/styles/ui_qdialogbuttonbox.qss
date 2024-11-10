@@ -1,0 +1,6 @@
+QDialogButtonBox
+{
+  background-color: @lightGrayColor;
+}
+
+QDialogButtonBox @ui_qdialogbuttonbox_qpushbutton.qss 

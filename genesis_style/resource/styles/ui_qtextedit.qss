@@ -1,0 +1,34 @@
+/* QTextEdit */
+QTextEdit
+{
+  border-color:     @uiElementFrame;
+  border-width:     1px; 
+  border-radius:    3px;
+  border-style:     solid;
+
+  background-color: @uiElementInputBackground;
+  color:            @uiElementInputText;
+}
+
+QTextEdit:hover
+{
+  border-color:     @uiElementFrameHover;
+
+  background-color: @uiElementInputBackgroundHover;
+  color:            @uiElementInputTextHover;
+}
+
+QTextEdit:focus
+{
+  border-color:     @uiElementFrameActive;
+
+  background-color: @uiElementInputBackgroundActive;
+  color:            @uiElementInputTextActive;
+}
+
+QTextEdit:disabled
+{
+  border-color:     @uiElementFrameDisabled;
+  background-color: @uiElementInputBackgroundDisabled;
+  color:            @uiElementInputTextDisabled;
+}

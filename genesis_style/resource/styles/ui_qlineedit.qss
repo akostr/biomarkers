@@ -1,0 +1,37 @@
+/* QLineEdit */
+QLineEdit
+{
+  min-height:       19px;
+  padding-left:     3px;
+
+  border-color:     @uiElementFrame;
+  border-width:     1px; 
+  border-radius:    3px;
+  border-style:     solid;
+
+  background-color: @uiElementInputBackground;
+  color:            @uiElementInputText;
+}
+
+QLineEdit:hover
+{
+  border-color:     @uiElementFrameHover;
+
+  background-color: @uiElementInputBackgroundHover;
+  color:            @uiElementInputTextHover;
+}
+
+QLineEdit:focus
+{
+  border-color:     @uiElementFrameActive;
+
+  background-color: @uiElementInputBackgroundActive;
+  color:            @uiElementInputTextActive;
+}
+
+QLineEdit:disabled
+{
+  border-color:     @uiElementFrameDisabled;
+  background-color: @uiElementInputBackgroundDisabled;
+  color:            @uiElementInputTextDisabled;
+}

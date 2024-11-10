@@ -1,0 +1,45 @@
+/* as QPushButton secondary */
+QCommandLinkButton,
+QCommandLinkButton:flat
+{
+  outline:          transparent;
+
+  border-style:     solid;
+  border-radius:    3px;
+  border-width:     1px;
+  border-color:     "@vividColor";
+
+  background-color: "#ffffff";
+  
+  color:            "@vividColorDarker";
+  padding:          5px;
+}
+
+QCommandLinkButton:hover,
+QCommandLinkButton:flat:hover
+{
+  background-color: "#ffffff";
+
+  border-color:     "@vividColorDarker";
+  color:            "@vividColorDarker2";
+}
+
+QCommandLinkButton:pressed,
+QCommandLinkButton:flat:pressed
+{
+  background-color: "#ffffff";
+
+  border-color:     "@vividColorDarker2";
+  color:            "@vividColorDarker3";
+}
+
+QCommandLinkButton:disabled,
+QCommandLinkButton:flat:disabled
+{
+  background-color: "#ffffff";
+
+  border-color:     "@lightGrayColor2";
+  background-color: "@lightGrayColor2";
+
+  color:            "@fontColorSecondary";
+}

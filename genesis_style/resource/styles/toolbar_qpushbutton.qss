@@ -1,0 +1,66 @@
+/* toolbar / .QPushButton primary */
+.QPushButton
+{
+  padding:          1px 1px 1px 1px;
+
+  border-style:     solid;
+  border-radius:    3px;
+  border-width:     1px;
+
+  border-color:     white;
+  background-color: white;
+  
+  color:            @fontColorPrimary;
+}
+
+.QPushButton:hover
+{
+  border-color:     @lightGrayColor2;
+  background-color: @lightGrayColor2;
+
+  color:            @textColorVivid;
+}
+
+.QPushButton:pressed
+{
+  border-color:     @lightGrayColor2;
+  background-color: @lightGrayColor2
+
+  color:            @textColorVivid;
+}
+
+.QPushButton:disabled
+{
+  border-color:     white;
+  background-color: white;
+
+  color:            @fontColorSecondary;
+}
+
+/* .QPushButton secondary */
+.QPushButton:flat
+{
+  border-color:     white;
+  background-color: white;
+
+  color:            @fontColorPrimary;
+}
+
+.QPushButton:flat:hover
+{
+  border-color:     @lightGrayColor2;
+  
+  color:            @textColorVivid;
+}
+
+.QPushButton:flat:pressed
+{
+  border-color:     @lightGrayColor2;
+
+  color:            @textColorVivid;
+}
+
+.QPushButton:flat:disabled
+{
+  color:            @fontColorSecondary;
+}

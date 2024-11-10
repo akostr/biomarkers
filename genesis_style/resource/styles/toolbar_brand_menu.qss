@@ -1,0 +1,31 @@
+/* QMenu */
+@ui_qmenu.qss
+
+/* QMenu - inherit all from generic qmenu, override colors */
+QMenu
+{
+  background-color: @brandColorLighter2;
+  color:            @fontColorPrimary;
+}
+
+QMenu::item
+{
+  color:            @brandMenuForeground;
+}
+
+QMenu::separator
+{
+  background:       @brandMenuSeparator;
+}
+
+QMenu::item:selected
+{
+  background-color: @brandMenuBackgroundSelected;
+  color:            @brandMenuForegroundSelected;
+}
+
+QMenu::item:disabled
+{
+  background-color: @brandColorLighter2;
+  color:            @brandMenuForegroundDisabled;
+}

@@ -1,0 +1,115 @@
+/* QComboBox */
+QComboBox:!editable
+{
+  min-height:       19px;
+  padding-left:     3px;
+
+  border-color:     @uiElementFrame;
+  border-width:     1px; 
+  border-radius:    3px;
+  border-style:     solid;
+
+  background-color: @uiElementInputBackground;
+  color:            @uiElementInputText;
+}
+
+QComboBox:editable
+{
+  min-height:       19px;
+  padding-left:     3px;
+
+  border-color:     @uiElementFrame;
+  border-width:     1px;
+  border-radius:    3px;
+  border-style:     solid;
+
+  background-color: @uiElementInputBackground;
+  color:            @uiElementInputText;
+}
+
+/*
+QComboBox QWidget
+{
+  background-color: @uiElementInputBackground;
+}
+*/
+
+QComboBox:hover
+{
+  border-color:     @uiElementFrameHover;
+
+  background-color: @uiElementInputBackgroundHover;
+  color:            @uiElementInputTextHover;
+}
+
+QComboBox:focus,on
+{
+  border-color:     @uiElementFrameActive;
+
+  background-color: @uiElementInputBackgroundActive;
+  color:            @uiElementInputTextActive;
+}
+
+QComboBox:disabled
+{
+  border-color:     @uiElementFrameDisabled;
+  background-color: @uiElementInputBackgroundDisabled;
+  color:            @uiElementInputTextDisabled;
+}
+
+QComboBox::drop-down
+{
+  background:       none;
+  border-width:     0px;
+}
+
+QComboBox QAbstractItemView 
+{
+  background:       none;
+  outline:          transparent;
+
+  border-color:     @uiElementFrameActive;
+  border-width:     1px;
+  border-style:     solid;
+}
+
+QComboBox QAbstractItemView::item
+{
+  /*
+  color: red;
+  min-height:       23px;*/
+}
+
+/*
+QComboBox QAbstractItemView::item
+{
+  border-top:       5px solid transparent;
+  border-bottom:    5px solid transparent;
+  margin:           5px;
+}
+*/
+
+QComboBox:down-arrow
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow@hdpi.png);
+}
+
+QComboBox:down-arrow:hover
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow_hover@hdpi.png);
+}
+
+QComboBox:down-arrow:focus
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow_active@hdpi.png);
+}
+
+QComboBox:down-arrow:on
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow_shown@hdpi.png);
+}
+
+QComboBox:down-arrow:disabled
+{
+  image: url(:/resource/styles/standard/qcombobox/down_arrow_disabled@hdpi.png);
+}

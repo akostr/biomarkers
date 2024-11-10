@@ -1,0 +1,22 @@
+QFrame[frameShape="@QFrame::HLine"]
+{
+  height:       0px;
+  border-top:   1px solid @frameColor;
+}
+
+QFrame[frameShape="@QFrame::HLine"][thick="true"]
+{
+  height:       3px;
+  border-top:   3px solid @frameColor;
+}
+
+QFrame[frameShape="@QFrame::VLine"]
+{
+  width:        0px;
+  border-left:  1px solid @frameColor;
+}
+
+QFrame[frameShape="@QFrame::Box"]
+{
+  border:       1px solid @frameColor;
+}

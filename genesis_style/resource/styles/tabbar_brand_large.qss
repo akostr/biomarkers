@@ -1,0 +1,39 @@
+/* todo rework */
+QWidget
+{
+  font:       11pt @fontFace;
+  background: #29313c;
+  color:      #aaecedee;
+}
+
+QWidget#TabViewBottom
+{
+  background: #58626f;
+}
+
+QTabBar
+{
+}
+
+QTabBar::tab
+{
+  background: #333f4c;
+}
+
+QTabBar::tab:hover
+{
+  background: #404955;
+  color:      #aaecedee;
+}
+
+QTabBar::tab:selected
+{
+  background: #58626f;
+  color:      #ffecedee;
+}
+
+QTabBar QToolButton
+{
+  border-width: 0px;
+  border:       none;
+}

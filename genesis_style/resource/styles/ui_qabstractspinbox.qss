@@ -1,0 +1,116 @@
+/* QAbstractSpinBox */
+QAbstractSpinBox
+{
+  min-height:           19px;
+  padding-left:         3px;
+
+  border-width:         1px; 
+  border-radius:        3px;
+  border-style:         solid;
+
+  background-color:     @uiElementInputBackground;
+  border-color:         @uiElementFrame;
+  color:                @uiElementInputText;
+}
+
+QAbstractSpinBox:hover
+{
+  background-color:     @uiElementInputBackgroundHover;
+  border-color:         @uiElementFrameHover;
+  color:                @uiElementInputTextHover;
+}
+
+QAbstractSpinBox:focus
+{
+  background-color:     @uiElementInputBackgroundActive;
+  border-color:         @uiElementFrameActive;
+  color:                @uiElementInputTextActive;
+}
+
+QAbstractSpinBox:disabled
+{
+  background-color:     @uiElementInputBackgroundDisabled;
+  border-color:         @uiElementFrameDisabled;
+  color:                @uiElementInputTextDisabled;
+}
+
+QAbstractSpinBox::up-button, 
+QAbstractSpinBox::down-button 
+{
+  width:           14px;
+  height:          11px;
+
+  padding-left:    0px;
+  padding-right:   0px;
+
+  border:          0px;
+  border-radius:   0px;
+}
+
+QAbstractSpinBox[buttonSymbols="@QAbstractSpinBox::NoButtons"]::up-button,
+QAbstractSpinBox[buttonSymbols="@QAbstractSpinBox::NoButtons"]::down-button
+{
+  width:           0px;
+}
+
+QAbstractSpinBox::up-button:hover, 
+QAbstractSpinBox::down-button:hover
+{
+  background-color:   @lightGrayColor;
+}
+
+QAbstractSpinBox::up-button:pressed,
+QAbstractSpinBox::down-button:pressed
+{
+  background-color:   @lightGrayColor2;
+}
+
+QAbstractSpinBox::up-button
+{
+  padding-top:     1px;
+  padding-bottom:  -1px;
+
+  border-top-right-radius: 2px;
+
+  subcontrol-origin:   content;
+  subcontrol-position: top right;
+}
+
+QAbstractSpinBox::down-button 
+{
+  padding-top:     -1px;
+  padding-bottom:  1px;
+
+  border-bottom-right-radius: 2px;
+
+  subcontrol-origin:   content;
+  subcontrol-position: bottom right;
+}
+
+QAbstractSpinBox::up-arrow 
+{
+  image: url(:/resource/styles/standard/qabstractspinbox/qspinbox_up.png);
+
+  width:  6px;
+  height: 3px;
+}
+
+QAbstractSpinBox::up-arrow:disabled,
+QAbstractSpinBox::up-arrow:off 
+{
+  image: url(:/resource/styles/standard/qabstractspinbox/qspinbox_up_disabled.png);
+}
+
+QAbstractSpinBox::down-arrow 
+{
+  image: url(:/resource/styles/standard/qabstractspinbox/qspinbox_down.png);
+
+  width:  6px;
+  height: 3px;
+}
+
+QAbstractSpinBox::down-arrow:disabled,
+QAbstractSpinBox::down-arrow:off 
+{
+  image: url(:/resource/styles/standard/qabstractspinbox/qspinbox_down_disabled.png);
+}

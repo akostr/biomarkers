@@ -1,0 +1,121 @@
+/* QMenu */
+QMenu
+{
+  background-color: @lightGrayColor;
+  color:            @fontColorPrimary;
+  font:             normal @fontSize @fontFace;
+  border:           none;
+}
+
+QMenu::item
+{
+  height:           20px;
+  
+  padding-top:      2px;
+  padding-bottom:   2px;
+  padding-right:    16px;
+  padding-left:     28px;
+
+  color:            @fontColorPrimary;
+  font:             normal @fontSize @fontFace;
+  border:           none;
+}
+
+QMenu::item:checked,
+QMenu::item:unchecked
+{
+  padding-left:     @qt_version_dependent_styled_menu_left_padding_workaround;
+}
+
+QMenu::right-arrow
+{
+  background-color: transparent;
+
+  padding-top:      2px;
+  padding-bottom:   2px;
+
+  padding-right:    6px;
+  padding-left:     6px;
+
+  image: url(:/resource/styles/standard/qmenu/menu_right_arrow@hdpi.png);
+}
+
+QMenu::icon
+{
+  background-color: transparent;
+
+  padding-top:      2px;
+  padding-bottom:   2px;
+
+  width:            16px;
+  height:           16px;
+
+  padding-right:    6px;
+  padding-left:     6px;  
+}
+
+QMenu::indicator 
+{
+  background-color: transparent;
+
+  padding-top:      2px;
+  padding-bottom:   2px;
+
+  width:            16px;
+  height:           16px;
+
+  padding-right:    6px;
+  padding-left:     6px;
+}
+
+QMenu::separator
+{
+  height:           1px;
+  width:            1px;
+
+  background:       @frameColor;
+  border:           none;
+}
+
+QMenu::item:selected
+{
+  background-color: @lightGrayColor2;
+}
+
+QMenu::item:disabled
+{
+  background-color: transparent;
+  color:            @fontColorSecondary;
+}
+
+/* radio */
+QMenu::indicator:non-exclusive:checked
+{
+  image: url(:/resource/styles/standard/qmenu/checkbox_context_on@hdpi.png);
+}
+
+QMenu::indicator:non-exclusive:checked:disabled
+{
+  image: url(:/resource/styles/standard/qmenu/checkbox_context_off@hdpi.png);
+}
+
+QMenu::indicator:non-exclusive:unchecked
+{
+  image: none;
+}
+
+/* radio */
+QMenu::indicator:exclusive:checked
+{
+  image: url(:/resource/styles/standard/qmenu/radiobutton_context_on@hdpi.png);
+}
+
+QMenu::indicator:exclusive:checked:disabled
+{
+  image: url(:/resource/styles/standard/qmenu/radiobutton_context_off@hdpi.png);
+}
+
+QMenu::indicator:exclusive:unchecked
+{
+  image: none;
+}

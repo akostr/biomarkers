@@ -1,0 +1,40 @@
+/* QPushButton plain*/
+QPushButton::menu-indicator
+{
+  image: none;
+  width: -2px;
+}
+
+.QPushButton
+{
+  outline:          transparent;
+
+  border-style:     solid;
+  border-width:     0px;
+  border-color:     transparent;
+  background-color: transparent;
+  
+  color:            @fontColorPrimary;
+  padding:          0px; /*or what?*/
+}
+
+.QPushButton:hover
+{
+  border-color:     transparent;
+  background-color: transparent;
+}
+
+.QPushButton:pressed
+{
+  border-color:     transparent;
+  background-color: transparent;
+}
+
+.QPushButton:disabled
+{
+  color:            @fontColorSecondary;
+
+  border-color:     transparent;
+  background-color: transparent;
+}
+

@@ -1,0 +1,12 @@
+/* tollbar / QLabel */
+QLabel 
+{
+  color:          @fontColorPrimary;
+  padding:        4px 4px 4px 4px;
+  font:           @fontSize @fontFace;
+}
+
+QLabel:disabled
+{
+  color:          @fontColorSecondary;
+}

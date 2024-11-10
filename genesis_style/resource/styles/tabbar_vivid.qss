@@ -1,0 +1,98 @@
+/* QTabWidget */
+QTabWidget::pane 
+{
+  border: none;
+}
+
+QTabWidget::tab-bar
+{
+  left: 8px;
+}
+
+/* QToolButton */
+QTabBar QToolButton
+{
+  border-width: 0px;
+  border:       none;
+}
+
+/* QTabBar */
+QTabBar
+{
+  qproperty-drawBase: false;
+  background:         transparent;
+}
+
+/* QTabBar::tab */
+/* :only-one, :first, :last, :middle, :previous--selected, :next-selected, :selected  */
+QTabBar::tab
+{
+  background:     transparent;
+  color:          @vividColorDarker0;
+
+  border:         1px solid @vividColor;
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left:   6px;
+  padding-right:  6px;
+  margin-left:    -1px;
+}
+
+QTabBar::tab:first
+{
+  margin-left:    0px;
+
+  border-top-left-radius:    3px;
+  border-bottom-left-radius: 3px;
+}
+
+QTabBar::tab:last
+{
+  border-top-right-radius:    3px;
+  border-bottom-right-radius: 3px;
+}
+
+QTabBar::tab:hover
+{
+  background:     @vividColorPale01;
+  color:          @vividColorDarker2;
+}
+
+QTabBar::tab:selected
+{
+  background:     @vividColor;
+  color:          white;
+}
+
+QTabBar::tab:pressed
+{
+  background:     @vividColorDarker2;
+  border-color:   @vividColorDarker2;
+  color:          white;
+}
+
+QTabBar::tab:focus
+{
+  background:     @vividColorDarker4;
+  border-color:   @vividColorDarker4;
+  color:          white;
+}
+
+QTabBar::tab:disabled
+{
+  background:     @whiteHalf;
+  border-color:   @vividColorDarker0Half;
+  color:          @vividColorDarker0Half;
+}
+
+QTabBar QToolButton::left-arrow
+{
+  background: white;
+  image: url(:/resource/styles/standard/spinner/spin_lt@hdpi.png);
+}
+
+QTabBar QToolButton::right-arrow
+{
+  background: white;
+  image: url(:/resource/styles/standard/spinner/spin_rt@hdpi.png);
+}
