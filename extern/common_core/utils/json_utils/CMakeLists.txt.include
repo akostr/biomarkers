@@ -1,0 +1,7 @@
+# cmake
+cmake_minimum_required(VERSION 3.16)
+
+# define feature
+add_compile_definitions(
+  USE_UBJSON
+)
