@@ -1,0 +1,5 @@
+QLabel
+{
+  font: @AxisTicksTextFont;
+  color: @fontColorPrimary;
+}

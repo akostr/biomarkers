@@ -1,0 +1,85 @@
+/* Custom window title buttons */
+#CWFrameWidget,
+#CWTitleWidget
+{
+  background-color: @brandColor;
+}
+
+/* ================================ */
+#CWMenuButton,
+#CWMinButton,
+#CWMaxButton,
+#CWCloseButton
+{
+  border: 0px;
+  border-radius: 0;
+  padding: 1px 1px 1px 1px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+#CWMinButton:hover,
+#CWMaxButton:hover
+{
+  background-color: @brandColorSelected;
+}
+
+#CWMenuButton::menu-indicator
+{
+  image: none;
+  width: 0px;
+}
+
+/* ================================ */
+
+#CWMenuButton
+{
+  border-radius:      0;
+  background-color:   transparent;
+  
+  /*
+  qproperty-icon:     url(:/resource/styles/standard/logo/logo_head@hdpi.png);  
+  qproperty-iconSize: 24px 16px;
+
+  qproperty-icon:     url(:/resource/styles/standard/logo/logo_with_text@hdpi.png);
+  qproperty-iconSize: 120px 17px;
+  */
+}
+#CWMenuButton:hover
+{
+}
+
+#CWLogo
+{
+  color:      #ffffff;
+  font:       14pt demibold @fontFaceDemibold;
+}
+
+#CWDescription
+{
+  color:      #ecedee;
+  font:       @fontSize @fontFace;
+}
+
+#CWMinButton
+{
+  border-image: url(:/resource/styles/standard/custom_window_title/min_button.png);
+}
+
+#CWMaxButton
+{
+  border-image: url(:/resource/styles/standard/custom_window_title/max_button.png);
+}
+#CWMaxButton:checked
+{
+  border-image: url(:/resource/styles/standard/custom_window_title/normal_button.png);
+}
+
+#CWCloseButton
+{
+  border-image: url(:/resource/styles/standard/custom_window_title/close_button.png);
+}
+#CWCloseButton:hover
+{
+  background-color: #ed2122;
+}

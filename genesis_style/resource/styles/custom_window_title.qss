@@ -1,0 +1,8 @@
+/* Custom window title */
+@custom_window_title_buttons.qss
+@custom_window_title_menu.qss
+
+#CWTitleWidget
+{
+  min-height: 30px;
+}

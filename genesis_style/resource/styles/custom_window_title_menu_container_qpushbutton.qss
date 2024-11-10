@@ -1,0 +1,45 @@
+/* QPushButton */
+QPushButton 
+{
+  font:             @fontSizeLarger @fontFace;
+
+  border-radius:    0px;
+
+  padding-left:     8px;
+  padding-right:    8px;
+
+  border-color:     transparent;
+  background-color: transparent;
+
+  color:            @vividColorText;
+}
+
+QPushButton:hover
+{
+  border-color:     @brandColorSelected;
+  background-color: @brandColorSelected;
+
+  color:            @vividColorText;
+}
+
+QPushButton:pressed 
+{
+  border-color:     @brandColorLighter2;
+  background-color: @brandColorLighter2;
+
+  color:            @vividColorText;
+}
+
+QPushButton:disabled
+{
+  border-color:     transparent;
+  background-color: transparent;
+
+  color:            @vividColorText;
+}
+
+QPushButton::menu-indicator
+{
+  image:            none;
+  width:            0px;
+}

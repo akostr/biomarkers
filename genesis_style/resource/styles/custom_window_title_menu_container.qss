@@ -1,0 +1,3 @@
+/* Menu integrated in native window caption */
+@custom_window_title_menu_container_qpushbutton.qss
+@toolbar_brand_menu.qss
