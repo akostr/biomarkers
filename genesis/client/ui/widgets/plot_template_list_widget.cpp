@@ -110,6 +110,29 @@ void PlotTemplateListWidget::setupUi()
   ui->wdtTemplateList->setCaptionLabel(tr("Template list"));
 
   auto controlMenu = new QMenu(ui->pbControlMenu);
+  void PlotTemplateListWidget::setupContextMenu() {
+    // Создаем меню, если его еще нет
+    auto controlMenu = new QMenu(ui->pbControlMenu);
+
+    // Создаем действия для копирования, вставки и вырезания
+    QAction* copyAction = new QAction(tr("Copy"), this);
+    QAction* pasteAction = new QAction(tr("Paste"), this);
+    QAction* cutAction = new QAction(tr("Cut"), this);
+
+    // Добавляем действия в меню
+    controlMenu->addAction(copyAction);
+    controlMenu->addAction(pasteAction);
+    controlMenu->addAction(cutAction);
+
+    // Подключаем сигналы к функциям
+    connect(copyAction, &QAction::triggered, this, &PlotTemplateListWidget::copySelectedItem);
+    connect(pasteAction, &QAction::triggered, this, &PlotTemplateListWidget::pasteItem);
+    connect(cutAction, &QAction::triggered, this, &PlotTemplateListWidget::cutSelectedItem);
+
+    // Устанавливаем меню для элемента управления
+    ui->pbControlMenu->setMenu(controlMenu);
+}
+
   auto editTemplateAction = new QAction(tr("Edit"));
   controlMenu->addAction(editTemplateAction);
   m_shareAccessAction = new QAction(tr("Share access"));
@@ -129,6 +152,28 @@ void PlotTemplateListWidget::setupUi()
   ui->pbControlMenu->style()->polish(ui->pbControlMenu);
   ui->pbControlMenu->setProperty("disabled_for_system", false);
 
+}
+// Копирование выбранного объекта
+void ClassName::copySelectedItem() {
+    // Сохраняем ссылку на текущий объект и его стиль
+    copiedItem = currentItem;
+    copiedItemStyle = currentItem->style();
+}
+
+// Вставка скопированного объекта
+void ClassName::pasteItem() {
+    if (copiedItem) {
+        // Создаем новый объект на основе скопированного и применяем стиль
+        auto newItem = new ItemType(*copiedItem);
+        newItem->setStyle(copiedItemStyle);
+        addItemToScene(newItem); // Добавляем объект на сцену
+    }
+}
+
+// Вырезание объекта
+void ClassName::cutSelectedItem() {
+    copySelectedItem();  // Сначала копируем объект
+    deleteSelectedItem(); // Удаляем текущий объект
 }
 
 void PlotTemplateListWidget::setPageLibrary(Views::ViewPageLibrary *library)
