@@ -56,6 +56,30 @@ void GPRichTextItem::SetStretch(float scaleX, float scaleY) {
 
     Text->prepare(transform, Font);  // Применяем трансформацию к тексту
 }
+//функция переноса текста с помощью мыши
+void GPRichTextItem::mousePressEvent(QGraphicsSceneMouseEvent *event) {
+    // Захватываем начальную позицию текста при нажатии
+    if (event->button() == Qt::LeftButton) {
+        // Запоминаем начальную позицию, чтобы потом вычислить перемещение
+        setFlag(ItemIsMovable, true);  // Разрешаем перемещение объекта
+        QGraphicsItem::mousePressEvent(event);  // Стандартное поведение для обработки нажатия
+    }
+}
+
+void GPRichTextItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
+    // Перемещаем текст в зависимости от движения мыши
+    if (event->buttons() & Qt::LeftButton) {
+        // Двигаем объект, пока зажата левая кнопка мыши
+        setPos(event->scenePos() - offset());  // Вычисляем новый позиционированный сдвиг
+    }
+    QGraphicsItem::mouseMoveEvent(event);  // Стандартное поведение для перемещения объекта
+}
+
+void GPRichTextItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
+    // Завершаем перемещение
+    setFlag(ItemIsMovable, false);  // Отключаем возможность перемещения после отпускания кнопки мыши
+    QGraphicsItem::mouseReleaseEvent(event);  // Стандартное поведение для обработки отпускания кнопки
+}
 
 QString GPRichTextItem::GetText()
 {
