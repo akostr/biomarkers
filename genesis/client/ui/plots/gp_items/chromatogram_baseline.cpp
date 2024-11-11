@@ -32,6 +32,54 @@ ChromatogramBaseline::~ChromatogramBaseline()
 {
 
 }
+//функция масштабирования линии
+private:
+    QPointF mCenter;  // Центр линии (точка масштабирования)
+    bool mIsScaling = false;  // Флаг, указывающий, что линия в процессе масштабирования
+    double mInitialDistance = 0.0;  // Начальное расстояние при нажатии мыши
+
+void ChromatogramBaseline::mousePressEvent(QGraphicsSceneMouseEvent *event) {
+    if (event->button() == Qt::LeftButton) {
+        mCenter = calculateLineCenter();  // Вычисляем центр линии
+        QPointF mousePos = event->scenePos();
+        mInitialDistance = std::sqrt(std::pow(mousePos.x() - mCenter.x(), 2) + std::pow(mousePos.y() - mCenter.y(), 2));  // Начальное расстояние
+        mIsScaling = true;  // Устанавливаем флаг на начало масштабирования
+    }
+    QGraphicsItem::mousePressEvent(event);  // Стандартное поведение для нажатия
+}
+
+void ChromatogramBaseline::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
+    if (mIsScaling) {
+        QPointF mousePos = event->scenePos();
+        double currentDistance = std::sqrt(std::pow(mousePos.x() - mCenter.x(), 2) + std::pow(mousePos.y() - mCenter.y(), 2));  // Текущее расстояние
+
+        double scaleFactor = currentDistance / mInitialDistance;  // Вычисляем коэффициент масштабирования
+        ScaleLine(scaleFactor, scaleFactor);  // Масштабируем линию
+    }
+    QGraphicsItem::mouseMoveEvent(event);  // Стандартное поведение для перемещения
+}
+
+void ChromatogramBaseline::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
+    if (mIsScaling) {
+        mIsScaling = false;  // Завершаем масштабирование
+    }
+    QGraphicsItem::mouseReleaseEvent(event);  // Стандартное поведение для отпускания кнопки
+}
+
+void ChromatogramBaseline::ScaleLine(double scaleX, double scaleY) {
+    QTransform transform;
+    transform.translate(mCenter.x(), mCenter.y());  // Сдвигаем к центру
+    transform.scale(scaleX, scaleY);  // Масштабируем по осям X и Y
+    transform.translate(-mCenter.x(), -mCenter.y());  // Возвращаем обратно
+
+    // Применяем масштабирование ко всем точкам линии
+    for (int i = 0; i < mBaseLineModel->size(); ++i) {
+        double x = mBaseLineModel->at(i).first;
+        double y = mBaseLineModel->at(i).second;
+        QPointF scaledPoint = transform.map(QPointF(x, y));  // Применяем трансформацию
+        mBaseLineModel->replace(i, scaledPoint.x(), scaledPoint.y());  // Обновляем точку
+    }
+}
 
 //функция поворота линии
 private:
