@@ -706,6 +706,33 @@ namespace Widgets
       mContextMenu->clear();
     else
       mContextMenu = new QMenu(this);
+void PcaCountPlotWidget::setupContextMenu() {
+    // Создаем контекстное меню, если его еще нет
+    if (!mContextMenu) {
+        mContextMenu = new QMenu(this);
+    }
+
+    // Создаем действия для копирования, вставки и вырезания
+    QAction* copyAction = new QAction(tr("Copy"), this);
+    QAction* pasteAction = new QAction(tr("Paste"), this);
+    QAction* cutAction = new QAction(tr("Cut"), this);
+
+    // Добавляем действия в контекстное меню
+    mContextMenu->addAction(copyAction);
+    mContextMenu->addAction(pasteAction);
+    mContextMenu->addAction(cutAction);
+
+    // Подключаем действия к функциям
+    connect(copyAction, &QAction::triggered, this, &PcaCountPlotWidget::copySelectedItem);
+    connect(pasteAction, &QAction::triggered, this, &PcaCountPlotWidget::pasteItem);
+    connect(cutAction, &QAction::triggered, this, &PcaCountPlotWidget::cutSelectedItem);
+}
+
+// Функция для обработки запроса контекстного меню
+void PcaCountPlotWidget::onPlotContextMenuRequested(const QPoint &pos) {
+    setupContextMenu();
+    mContextMenu->exec(mapToGlobal(pos));  // Показать контекстное меню в точке клика
+}
 
     if(mInHottelingManualMode)
       createHottelingContextMenu(event);
@@ -730,7 +757,30 @@ namespace Widgets
     }
   }
 
-  IdentityModelPtr PcaCountPlotWidget::createHottelingRequestModel(const QString& criterion, uint gk)
+// Копирование выбранного объекта
+void ClassName::copySelectedItem() {
+    // Сохраняем ссылку на текущий объект и его стиль
+    copiedItem = currentItem;
+    copiedItemStyle = currentItem->style();
+}
+
+// Вставка скопированного объекта
+void ClassName::pasteItem() {
+    if (copiedItem) {
+        // Создаем новый объект на основе скопированного и применяем стиль
+        auto newItem = new ItemType(*copiedItem);
+        newItem->setStyle(copiedItemStyle);
+        addItemToScene(newItem); // Добавляем объект на сцену
+    }
+}
+
+// Вырезание объекта
+void ClassName::cutSelectedItem() {
+    copySelectedItem();  // Сначала копируем объект
+    deleteSelectedItem(); // Удаляем текущий объект
+}
+  
+IdentityModelPtr PcaCountPlotWidget::createHottelingRequestModel(const QString& criterion, uint gk)
   {
     QStringList logs = { LOG_PREFIX(" Create manual hotteling request model. ") };
     QScopeGuard guard([&]() { SaveToLog(logs); });
