@@ -17,14 +17,15 @@ public:
   void removePointFromBaseLine(double key);
   void removePointsFromBaseLine(QList<double> keys);
   void removeSelectedPointsFromBaseLine();
+  void ScaleLine(double scaleX, double scaleY);  // Масштабирование линии
   void RotateLine(double deltaAngle); // Поворот линии
   QPointF calculateLineCenter();  // Функция для вычисления центра линии
   QPair<double, GPCurveDataContainer::const_iterator> closestPoint(QPoint pixelPos);
 
 protected:
-    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;  // Начало поворота
-    void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;   // Поворот при движении мыши
-    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override; // Завершение поворота
+    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;  // Начало поворота и масштабирования
+    void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;   // Поворот и масштабирование при движении мыши
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override; // Завершение поворота и масштабирования
 
 signals:
   void newCommand(QUndoCommand* cmd);
