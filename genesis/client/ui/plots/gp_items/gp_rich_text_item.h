@@ -19,17 +19,18 @@ public:
   void SetMinimumHeight(int newMinimumHeight);
   void SetMinimumWidth(int newMinimumWidth);
   QRectF BoundingRect() const;
-  void RotateText(qreal angle);  // Добавляем функцию для поворота текста
-  void SetStretch(float scaleX, float scaleY);  // Функция для растяжения текста по осям X и Y
+  void SetScale(float scaleX, float scaleY);  // Масштабирование
+  void RotateText(double angle);  // Поворот текста
+  void SetTextPosition(QPointF newPos);  // Перемещение текста
 
   double selectTest(const QPointF& pos, bool onlySelectable, QVariant* details = nullptr) const override;
 
 protected:
   void draw (GPPainter *painter) override;
   void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event) override;  // Переопределим метод для двойного клика
-  void mousePressEvent(QGraphicsSceneMouseEvent *event) override;  // Для захвата позиции текста
-  void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;   // Для перемещения текста
-  void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override; // Для завершения перемещения
+  void mousePressEvent(QGraphicsSceneMouseEvent *event) override;  // Начало действий с текстом
+  void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;   // Масштабирование, перемещение, поворот
+  void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override; // Завершение действий
 
 private:
   QScopedPointer<QStaticText> Text;
