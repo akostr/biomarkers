@@ -31,12 +31,7 @@ void GPRichTextItem::SetFont(const QFont &font)
 {
   Font = font;
 }
-//поворот текста
-void GPRichTextItem::RotateText(qreal angle) {
-    QTransform transform;
-    transform.rotate(angle);  // Поворачиваем текст на заданный угол
-    Text->prepare(transform, Font);  // Применяем трансформацию к тексту
-}
+
 //функция редактирования текста, которая будет вызываться при двойном клике мыши
 void GPRichTextItem::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event) {
     Q_UNUSED(event);
@@ -49,37 +44,82 @@ void GPRichTextItem::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event) {
         SetText(newText);  // Обновляем текст, если введен новый
     }
 }
-//функция масштабирования текста
-void GPRichTextItem::SetStretch(float scaleX, float scaleY) {
-    QTransform transform;  // Создаем объект QTransform
-    transform.scale(scaleX, scaleY);  // Применяем растяжение по осям X и Y
+//функция масштабирования, переноса и поворота текста
+private:
+    QPointF mCenter;  // Центр текста
+    bool mIsScaling = false;  // Флаг для отслеживания масштабирования
+    bool mIsMoving = false;   // Флаг для отслеживания перемещения
+    bool mIsRotating = false; // Флаг для отслеживания поворота
+    double mInitialDistance = 0.0; // Начальное расстояние для масштабирования
+    double mInitialAngle = 0.0;    // Начальный угол для поворота
 
-    Text->prepare(transform, Font);  // Применяем трансформацию к тексту
-}
-//функция переноса текста с помощью мыши
 void GPRichTextItem::mousePressEvent(QGraphicsSceneMouseEvent *event) {
-    // Захватываем начальную позицию текста при нажатии
     if (event->button() == Qt::LeftButton) {
-        // Запоминаем начальную позицию, чтобы потом вычислить перемещение
-        setFlag(ItemIsMovable, true);  // Разрешаем перемещение объекта
-        QGraphicsItem::mousePressEvent(event);  // Стандартное поведение для обработки нажатия
+        mCenter = this->boundingRect().center();  // Вычисляем центр текста
+
+        // Вычисляем начальную дистанцию для масштабирования
+        mInitialDistance = std::sqrt(std::pow(event->scenePos().x() - mCenter.x(), 2) +
+                                     std::pow(event->scenePos().y() - mCenter.y(), 2));
+
+        // Вычисляем начальный угол для поворота
+        mInitialAngle = std::atan2(event->scenePos().y() - mCenter.y(), event->scenePos().x() - mCenter.x());
+
+        mIsScaling = true;  // Начинаем масштабирование или поворот
     }
+    QGraphicsItem::mousePressEvent(event);  // Стандартное поведение для нажатия
 }
 
 void GPRichTextItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
-    // Перемещаем текст в зависимости от движения мыши
-    if (event->buttons() & Qt::LeftButton) {
-        // Двигаем объект, пока зажата левая кнопка мыши
-        setPos(event->scenePos() - offset());  // Вычисляем новый позиционированный сдвиг
+    if (mIsScaling) {
+        double currentDistance = std::sqrt(std::pow(event->scenePos().x() - mCenter.x(), 2) +
+                                           std::pow(event->scenePos().y() - mCenter.y(), 2));
+
+        double scaleFactor = currentDistance / mInitialDistance;  // Коэффициент масштабирования
+        SetScale(scaleFactor, scaleFactor);  // Масштабируем текст
     }
-    QGraphicsItem::mouseMoveEvent(event);  // Стандартное поведение для перемещения объекта
+
+    if (mIsMoving) {
+        // Перемещение текста
+        QPointF delta = event->scenePos() - mCenter;
+        SetTextPosition(mCenter + delta);
+    }
+
+    if (mIsRotating) {
+        double currentAngle = std::atan2(event->scenePos().y() - mCenter.y(), event->scenePos().x() - mCenter.x());
+        double deltaAngle = currentAngle - mInitialAngle;
+        RotateText(deltaAngle);  // Поворот текста
+    }
+
+    QGraphicsItem::mouseMoveEvent(event);  // Стандартное поведение для перемещения
 }
 
 void GPRichTextItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
-    // Завершаем перемещение
-    setFlag(ItemIsMovable, false);  // Отключаем возможность перемещения после отпускания кнопки мыши
-    QGraphicsItem::mouseReleaseEvent(event);  // Стандартное поведение для обработки отпускания кнопки
+    if (mIsScaling || mIsMoving || mIsRotating) {
+        mIsScaling = false;
+        mIsMoving = false;
+        mIsRotating = false;  // Завершаем действия
+    }
+    QGraphicsItem::mouseReleaseEvent(event);  // Стандартное поведение для отпускания кнопки
 }
+
+void GPRichTextItem::SetScale(float scaleX, float scaleY) {
+    QTransform transform;
+    transform.scale(scaleX, scaleY);  // Масштабируем текст
+    Text->prepare(transform, Font);    // Применяем масштабирование
+}
+
+void GPRichTextItem::SetTextPosition(QPointF newPos) {
+    this->setPos(newPos);  // Перемещаем текст
+}
+
+void GPRichTextItem::RotateText(double angle) {
+    QTransform transform;
+    transform.translate(mCenter.x(), mCenter.y());  // Сдвигаем в центр
+    transform.rotate(qRadiansToDegrees(angle));  // Поворачиваем текст
+    transform.translate(-mCenter.x(), -mCenter.y());  // Возвращаем текст на место
+    Text->prepare(transform, Font);  // Применяем поворот
+}
+
 
 QString GPRichTextItem::GetText()
 {
