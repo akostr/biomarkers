@@ -17,7 +17,9 @@ public:
   void removePointFromBaseLine(double key);
   void removePointsFromBaseLine(QList<double> keys);
   void removeSelectedPointsFromBaseLine();
-  void RotateLine(double angle);  // Добавляем метод для поворота линии
+  void mousePressEvent(QGraphicsSceneMouseEvent *event) override;  // Для начала поворота
+  void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;   // Для поворота во время движения мыши
+  void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override; // Для завершения поворота
   QPair<double, GPCurveDataContainer::const_iterator> closestPoint(QPoint pixelPos);
 
 signals:
