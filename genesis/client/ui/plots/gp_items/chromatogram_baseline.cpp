@@ -33,6 +33,67 @@ ChromatogramBaseline::~ChromatogramBaseline()
 
 }
 
+//функция поворота линии
+private:
+    QPointF mCenter;  // Центр линии (точка поворота)
+    bool mIsRotating = false;  // Флаг, указывающий, что линия в процессе поворота
+    double mInitialAngle = 0.0;  // Начальный угол при нажатии
+
+void ChromatogramBaseline::mousePressEvent(QGraphicsSceneMouseEvent *event) {
+    if (event->button() == Qt::LeftButton) {
+        // Вычисляем центр линии
+        mCenter = calculateLineCenter();  // Функция, которая вычисляет центр линии (среднее значение всех точек)
+
+        // Запоминаем начальный угол между мышью и центром линии
+        QPointF mousePos = event->scenePos();
+        mInitialAngle = std::atan2(mousePos.y() - mCenter.y(), mousePos.x() - mCenter.x());
+        
+        mIsRotating = true;  // Начало поворота
+    }
+    QGraphicsItem::mousePressEvent(event);  // Стандартное поведение для обработки нажатия
+}
+
+void ChromatogramBaseline::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
+    if (mIsRotating) {
+        // Вычисляем текущий угол между мышью и центром линии
+        QPointF mousePos = event->scenePos();
+        double currentAngle = std::atan2(mousePos.y() - mCenter.y(), mousePos.x() - mCenter.x());
+
+        // Вычисляем угол поворота
+        double deltaAngle = currentAngle - mInitialAngle;
+
+        // Поворачиваем линию на вычисленный угол
+        RotateLine(deltaAngle);  // Функция для поворота линии
+    }
+    QGraphicsItem::mouseMoveEvent(event);  // Стандартное поведение для перемещения объекта
+}
+
+void ChromatogramBaseline::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) {
+    if (mIsRotating) {
+        mIsRotating = false;  // Завершаем поворот
+    }
+    QGraphicsItem::mouseReleaseEvent(event);  // Стандартное поведение для отпускания кнопки мыши
+}
+
+void ChromatogramBaseline::RotateLine(double deltaAngle) {
+    // Применяем поворот ко всем точкам линии
+    QTransform transform;
+    transform.translate(mCenter.x(), mCenter.y());  // Сдвигаем к центру
+    transform.rotate(qRadiansToDegrees(deltaAngle));  // Поворачиваем на вычисленный угол
+    transform.translate(-mCenter.x(), -mCenter.y());  // Возвращаем обратно
+
+    // Применяем трансформацию ко всем точкам
+    for (int i = 0; i < mBaseLineModel->size(); ++i) {
+        double x = mBaseLineModel->at(i).first;
+        double y = mBaseLineModel->at(i).second;
+
+        QPointF rotatedPoint = transform.map(QPointF(x, y));  // Применяем трансформацию
+
+        // Обновляем точку в модели
+        mBaseLineModel->replace(i, rotatedPoint.x(), rotatedPoint.y());
+    }
+}
+
 void ChromatogramBaseline::setBaseLineModel(BaseLineDataModelPtr blineModel)
 {
   if(mBaseLineModel)
