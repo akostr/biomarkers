@@ -31,6 +31,31 @@ void GPRichTextItem::SetFont(const QFont &font)
 {
   Font = font;
 }
+//поворот текста
+void GPRichTextItem::RotateText(qreal angle) {
+    QTransform transform;
+    transform.rotate(angle);  // Поворачиваем текст на заданный угол
+    Text->prepare(transform, Font);  // Применяем трансформацию к тексту
+}
+//функция редактирования текста, которая будет вызываться при двойном клике мыши
+void GPRichTextItem::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event) {
+    Q_UNUSED(event);
+    // Открываем диалоговое окно для редактирования текста
+    bool ok;
+    QString newText = QInputDialog::getText(nullptr, "Редактирование текста", 
+                                              "Введите новый текст:", 
+                                              QLineEdit::Normal, Text->text(), &ok);
+    if (ok && !newText.isEmpty()) {
+        SetText(newText);  // Обновляем текст, если введен новый
+    }
+}
+//функция масштабирования текста
+void GPRichTextItem::SetStretch(float scaleX, float scaleY) {
+    QTransform transform;  // Создаем объект QTransform
+    transform.scale(scaleX, scaleY);  // Применяем растяжение по осям X и Y
+
+    Text->prepare(transform, Font);  // Применяем трансформацию к тексту
+}
 
 QString GPRichTextItem::GetText()
 {
